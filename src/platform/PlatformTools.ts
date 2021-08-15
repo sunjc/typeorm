@@ -1,12 +1,29 @@
-import * as path from "path";
-import * as fs from "fs";
-import dotenv from "dotenv";
-import chalk from "chalk";
-import {highlight, Theme} from "cli-highlight";
+import * as path from "../../vendor/https/deno.land/std/path/mod.ts";
+import * as colors from "../../vendor/https/deno.land/std/fmt/colors.ts";
+import * as fs from "../util/fs.ts";
+import {NotImplementedError} from "../error/NotImplementedError.ts";
+type Buffer = unknown;
+export type ReadStream = unknown;
 
-export {ReadStream} from "fs";
-export {EventEmitter} from "events";
-export {Readable, Writable} from "stream";
+// TODO(Sunjc) implement EventEmitter
+export class EventEmitter {
+    constructor() {
+        throw new NotImplementedError('EventEmitter.constructor');
+    }
+}
+// TODO(Sunjc) implement Readable
+export class Readable {
+    constructor() {
+        throw new NotImplementedError('Readable.constructor');
+    }
+}
+
+// TODO(Sunjc) implement Writable
+export class Writable {
+    constructor() {
+        throw new NotImplementedError('Writable.constructor');
+    }
+}
 
 /**
  * Platform-specific tools.
@@ -16,13 +33,13 @@ export class PlatformTools {
     /**
      * Type of the currently running platform.
      */
-    static type: "browser"|"node" = "node";
+    static type: "browser"|"deno" = "deno";
 
     /**
      * Gets global variable where global stuff can be stored.
      */
     static getGlobalVariable(): any {
-        return global;
+        return window;
     }
 
     /**
@@ -35,99 +52,44 @@ export class PlatformTools {
         // this is useful when we are using typeorm package globally installed and it accesses drivers
         // that are not installed globally
 
-        try {
-
             // switch case to explicit require statements for webpack compatibility.
 
-            switch (name) {
+        switch (name) {
 
-                /**
-                * mongodb
-                */
-                case "mongodb":
-                    return require("mongodb");
+            /**
+             * mongodb
+             */
+            case "mongodb":
+                return import("../../vendor/https/deno.land/x/mongodb/mod.ts");
 
-                /**
-                * hana
-                */
-                case "@sap/hana-client":
-                    return require("@sap/hana-client");
+            /**
+             * mysql
+             */
+            case "mysql":
+                return import("../../vendor/https/deno.land/x/mysql/mod.ts");
 
-                case "hdb-pool":
-                    return require("hdb-pool");
+            /**
+             * postgres
+             */
+            case "pg":
+                return import("../../vendor/https/deno.land/x/postgres/mod.ts");
+            /**
+             * redis
+             */
+            case "redis":
+                return import("../../vendor/https/deno.land/x/redis/mod.ts");
 
-                /**
-                * mysql
-                */
-                case "mysql":
-                    return require("mysql");
+            /**
+             * sqlite
+             */
+            case "sqlite3":
+                return import("../../vendor/https/deno.land/x/sqlite/mod.ts");
 
-                case "mysql2":
-                    return require("mysql2");
-
-                /**
-                * oracle
-                */
-                case "oracledb":
-                    return require("oracledb");
-
-                /**
-                * postgres
-                */
-                case "pg":
-                    return require("pg");
-
-                case "pg-native":
-                    return require("pg-native");
-
-                case "pg-query-stream":
-                    return require("pg-query-stream");
-
-                case "typeorm-aurora-data-api-driver":
-                    return require("typeorm-aurora-data-api-driver");
-
-                /**
-                * redis
-                */
-                case "redis":
-                    return require("redis");
-
-                case "ioredis":
-                    return require("ioredis");
-
-                /**
-                 * better-sqlite3
-                 */
-                case "better-sqlite3":
-                    return require("better-sqlite3");
-
-                /**
-                * sqlite
-                */
-                case "sqlite3":
-                    return require("sqlite3");
-
-                /**
-                * sql.js
-                */
-                case "sql.js":
-                    return require("sql.js");
-
-                /**
-                * sqlserver
-                */
-                case "mssql":
-                    return require("mssql");
-
-                /**
-                 * react-native-sqlite
-                 */
-                case "react-native-sqlite-storage":
-                    return require("react-native-sqlite-storage");
-            }
-
-        } catch (err) {
-            return require(path.resolve(process.cwd() + "/node_modules/" + name));
+            /**
+             * sqlserver
+             */
+            case "mssql":
+                return import("../../vendor/https/deno.land/x/mssql/mod.ts");
         }
 
         // If nothing above matched and we get here, the package was not listed within PlatformTools
@@ -183,63 +145,48 @@ export class PlatformTools {
     }
 
     /**
-     * Loads a dotenv file into the environment variables.
-     *
-     * @param path The file to load as a dotenv configuration
-     */
-    static dotenv(pathStr: string): void {
-        dotenv.config({ path: pathStr });
-    }
-
-    /**
      * Gets environment variable.
      */
     static getEnvVariable(name: string): any {
-        return process.env[name];
+        return Deno.env.get(name);
     }
 
+    // TODO(Sunjc) implement this method.
     /**
      * Highlights sql string to be print in the console.
      */
     static highlightSql(sql: string) {
-        const theme: Theme = {
-            "keyword": chalk.blueBright,
-            "literal": chalk.blueBright,
-            "string": chalk.white,
-            "type": chalk.magentaBright,
-            "built_in": chalk.magentaBright,
-            "comment": chalk.gray,
-        };
-        return highlight(sql, { theme: theme, language: "sql" });
+        return sql;
     }
 
+    // TODO(Sunjc) implement this method.
     /**
      * Highlights json string to be print in the console.
      */
     static highlightJson(json: string) {
-        return highlight(json, { language: "json" });
+        return json;
     }
 
     /**
      * Logging functions needed by AdvancedConsoleLogger
      */
     static logInfo(prefix: string, info: any) {
-        console.log(chalk.gray.underline(prefix), info);
+        console.log(colors.underline(colors.gray(prefix)), info);
     }
 
     static logError(prefix: string, error: any) {
-        console.log(chalk.underline.red(prefix), error);
+        console.log(colors.underline(colors.red(prefix)), error);
     }
 
     static logWarn(prefix: string, warning: any) {
-        console.log(chalk.underline.yellow(prefix), warning);
+        console.log(colors.underline(colors.yellow(prefix)), warning);
     }
 
     static log(message: string) {
-        console.log(chalk.underline(message));
+        console.log(colors.underline(message));
     }
 
     static warn(message: string) {
-        return chalk.yellow(message);
+        return colors.yellow(message);
     }
 }
