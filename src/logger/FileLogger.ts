@@ -1,5 +1,4 @@
 import {LoggerOptions, FileLoggerOptions} from "./LoggerOptions.ts";
-import appRootPath from "app-root-path";
 import {QueryRunner} from "../query-runner/QueryRunner.ts";
 import {Logger} from "./Logger.ts";
 import {PlatformTools} from "../platform/PlatformTools.ts";
@@ -101,7 +100,7 @@ export class FileLogger implements Logger {
      */
     protected write(strings: string|string[]) {
         strings = Array.isArray(strings) ? strings : [strings];
-        const basePath = appRootPath.path + "/";
+        const basePath = Deno.cwd();
         let logPath = "ormlogs.log";
         if (this.fileLoggerOptions && this.fileLoggerOptions.logPath) {
             logPath = PlatformTools.pathNormalize(this.fileLoggerOptions.logPath);

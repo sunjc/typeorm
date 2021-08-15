@@ -1,4 +1,3 @@
-import appRootPath from "app-root-path";
 import {ConnectionOptions} from "./ConnectionOptions.ts";
 import {PlatformTools} from "../platform/PlatformTools.ts";
 import {ConnectionOptionsEnvReader} from "./options-reader/ConnectionOptionsEnvReader.ts";
@@ -203,7 +202,7 @@ export class ConnectionOptionsReader {
         if (this.options && this.options.root)
             return this.options.root;
 
-        return appRootPath.path;
+        return Deno.cwd();
     }
 
     /**
