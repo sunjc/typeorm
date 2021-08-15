@@ -1,20 +1,20 @@
-import {Repository} from "./Repository";
-import {getConnection} from "../globals";
-import {FindConditions} from "../find-options/FindConditions";
-import {DeepPartial} from "../common/DeepPartial";
-import {SaveOptions} from "./SaveOptions";
-import {FindOneOptions} from "../find-options/FindOneOptions";
-import {RemoveOptions} from "./RemoveOptions";
-import {FindManyOptions} from "../find-options/FindManyOptions";
-import {Connection} from "../connection/Connection";
-import {ObjectType} from "../common/ObjectType";
-import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder";
-import {InsertResult} from "../query-builder/result/InsertResult";
-import {UpdateResult} from "../query-builder/result/UpdateResult";
-import {DeleteResult} from "../query-builder/result/DeleteResult";
-import {ObjectID} from "../driver/mongodb/typings";
-import {ObjectUtils} from "../util/ObjectUtils";
-import {QueryDeepPartialEntity} from "../query-builder/QueryPartialEntity";
+import {Repository} from "./Repository.ts";
+import {getConnection} from "../globals.ts";
+import {FindConditions} from "../find-options/FindConditions.ts";
+import {DeepPartial} from "../common/DeepPartial.ts";
+import {SaveOptions} from "./SaveOptions.ts";
+import {FindOneOptions} from "../find-options/FindOneOptions.ts";
+import {RemoveOptions} from "./RemoveOptions.ts";
+import {FindManyOptions} from "../find-options/FindManyOptions.ts";
+import {Connection} from "../connection/Connection.ts";
+import {ObjectType} from "../common/ObjectType.ts";
+import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder.ts";
+import {InsertResult} from "../query-builder/result/InsertResult.ts";
+import {UpdateResult} from "../query-builder/result/UpdateResult.ts";
+import {DeleteResult} from "../query-builder/result/DeleteResult.ts";
+import {ObjectID} from "../driver/mongodb/typings.ts";
+import {ObjectUtils} from "../util/ObjectUtils.ts";
+import {QueryDeepPartialEntity} from "../query-builder/QueryPartialEntity.ts";
 
 /**
  * Base abstract entity for all entities, used in ActiveRecord patterns.

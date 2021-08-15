@@ -1,4 +1,4 @@
-import {BaseConnectionOptions} from "../../connection/BaseConnectionOptions";
+import {BaseConnectionOptions} from "../../connection/BaseConnectionOptions.ts";
 
 /**
  * Sqlite-specific connection options.
@@ -29,7 +29,7 @@ export interface BetterSqlite3ConnectionOptions extends BaseConnectionOptions {
     /**
      * Function to run before a database is used in typeorm.
      * You can set pragmas, register plugins or register
-     * functions or aggregates in this function. 
+     * functions or aggregates in this function.
      */
     readonly prepareDatabase?: (db: any) => void | Promise<void>;
 

@@ -1,17 +1,17 @@
-import {PostgresConnectionOptions} from "../driver/postgres/PostgresConnectionOptions";
-import {Query} from "../driver/Query";
-import {SqlInMemory} from "../driver/SqlInMemory";
-import {SqlServerConnectionOptions} from "../driver/sqlserver/SqlServerConnectionOptions";
-import {View} from "../schema-builder/view/View";
-import {Connection} from "../connection/Connection";
-import {Table} from "../schema-builder/table/Table";
-import {EntityManager} from "../entity-manager/EntityManager";
-import {TableColumn} from "../schema-builder/table/TableColumn";
-import {Broadcaster} from "../subscriber/Broadcaster";
-import {ReplicationMode} from "../driver/types/ReplicationMode";
-import { TypeORMError } from "../error/TypeORMError";
-import { EntityMetadata } from "../metadata/EntityMetadata";
-import { TableForeignKey } from "../schema-builder/table/TableForeignKey";
+import {PostgresConnectionOptions} from "../driver/postgres/PostgresConnectionOptions.ts";
+import {Query} from "../driver/Query.ts";
+import {SqlInMemory} from "../driver/SqlInMemory.ts";
+import {SqlServerConnectionOptions} from "../driver/sqlserver/SqlServerConnectionOptions.ts";
+import {View} from "../schema-builder/view/View.ts";
+import {Connection} from "../connection/Connection.ts";
+import {Table} from "../schema-builder/table/Table.ts";
+import {EntityManager} from "../entity-manager/EntityManager.ts";
+import {TableColumn} from "../schema-builder/table/TableColumn.ts";
+import {Broadcaster} from "../subscriber/Broadcaster.ts";
+import {ReplicationMode} from "../driver/types/ReplicationMode.ts";
+import { TypeORMError } from "../error/TypeORMError.ts";
+import { EntityMetadata } from "../metadata/EntityMetadata.ts";
+import { TableForeignKey } from "../schema-builder/table/TableForeignKey.ts";
 
 export abstract class BaseQueryRunner {
 

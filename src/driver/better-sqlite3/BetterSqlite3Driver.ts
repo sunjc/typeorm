@@ -1,15 +1,15 @@
 import mkdirp from 'mkdirp';
 import path from 'path';
-import { DriverPackageNotInstalledError } from "../../error/DriverPackageNotInstalledError";
-import { DriverOptionNotSetError } from "../../error/DriverOptionNotSetError";
-import { PlatformTools } from "../../platform/PlatformTools";
-import { Connection } from "../../connection/Connection";
-import { ColumnType } from "../types/ColumnTypes";
-import { QueryRunner } from "../../query-runner/QueryRunner";
-import { AbstractSqliteDriver } from "../sqlite-abstract/AbstractSqliteDriver";
-import { BetterSqlite3ConnectionOptions } from "./BetterSqlite3ConnectionOptions";
-import { BetterSqlite3QueryRunner } from "./BetterSqlite3QueryRunner";
-import {ReplicationMode} from "../types/ReplicationMode";
+import { DriverPackageNotInstalledError } from "../../error/DriverPackageNotInstalledError.ts";
+import { DriverOptionNotSetError } from "../../error/DriverOptionNotSetError.ts";
+import { PlatformTools } from "../../platform/PlatformTools.ts";
+import { Connection } from "../../connection/Connection.ts";
+import { ColumnType } from "../types/ColumnTypes.ts";
+import { QueryRunner } from "../../query-runner/QueryRunner.ts";
+import { AbstractSqliteDriver } from "../sqlite-abstract/AbstractSqliteDriver.ts";
+import { BetterSqlite3ConnectionOptions } from "./BetterSqlite3ConnectionOptions.ts";
+import { BetterSqlite3QueryRunner } from "./BetterSqlite3QueryRunner.ts";
+import {ReplicationMode} from "../types/ReplicationMode.ts";
 
 /**
  * Organizes communication with sqlite DBMS.

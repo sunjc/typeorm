@@ -1,6 +1,6 @@
-import {getMetadataArgsStorage} from "../../globals";
-import {EventListenerTypes} from "../../metadata/types/EventListenerTypes";
-import {EntityListenerMetadataArgs} from "../../metadata-args/EntityListenerMetadataArgs";
+import {getMetadataArgsStorage} from "../../globals.ts";
+import {EventListenerTypes} from "../../metadata/types/EventListenerTypes.ts";
+import {EntityListenerMetadataArgs} from "../../metadata-args/EntityListenerMetadataArgs.ts";
 
 /**
  * Calls a method on which this decorator is applied before this entity insertion.

@@ -1,4 +1,4 @@
-import {WhereExpressionBuilder} from "./WhereExpressionBuilder";
+import {WhereExpressionBuilder} from "./WhereExpressionBuilder.ts";
 
 /**
  * Syntax sugar.
