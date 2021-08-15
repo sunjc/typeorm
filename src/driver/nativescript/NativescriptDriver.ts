@@ -76,9 +76,6 @@ export class NativescriptDriver extends AbstractSqliteDriver {
     }
 
     normalizeType(column: { type?: ColumnType, length?: number | string, precision?: number|null, scale?: number }): string {
-        if ((column.type as any) === Buffer) {
-            return "blob";
-        }
 
         return super.normalizeType(column);
     }

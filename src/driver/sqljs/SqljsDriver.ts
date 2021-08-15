@@ -85,7 +85,7 @@ export class SqljsDriver extends AbstractSqliteDriver {
     async load(fileNameOrLocalStorageOrData: string | Uint8Array, checkIfFileOrLocalStorageExists: boolean = true): Promise<any> {
         if (typeof fileNameOrLocalStorageOrData === "string") {
             // content has to be loaded
-            if (PlatformTools.type === "node") {
+            if (PlatformTools.type === "deno") {
                 // Node.js
                 // fileNameOrLocalStorageOrData should be a path to the file
                 if (PlatformTools.fileExist(fileNameOrLocalStorageOrData)) {
@@ -154,14 +154,14 @@ export class SqljsDriver extends AbstractSqliteDriver {
             path = this.options.location;
         }
 
-        if (PlatformTools.type === "node") {
-            try {
+        if (PlatformTools.type === "deno") {
+            /*try {
                 const content = Buffer.from(this.databaseConnection.export());
                 await PlatformTools.writeFile(path, content);
             }
             catch (e) {
                 throw new TypeORMError(`Could not save database, error: ${e}`);
-            }
+            }*/
         }
         else {
             const database: Uint8Array = this.databaseConnection.export();

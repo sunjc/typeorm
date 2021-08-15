@@ -1,4 +1,4 @@
-import shajs from "sha.js";
+import { Sha256 } from "https://deno.land/std/hash/sha256.ts";
 
 /**
  * Converts string into camelCase.
@@ -106,11 +106,9 @@ interface IHashOptions {
  * @param options.length Optionally, shorten the output to desired length.
  */
 export function hash(input: string, options: IHashOptions = {}): string {
-    const hashFunction = shajs("sha256");
-
-    hashFunction.update(input, "utf8");
-
-    const hashedInput = hashFunction.digest("hex");
+    const sha256 = new Sha256();
+    sha256.update(input);
+    const hashedInput = sha256.hex();
 
     if (options.length) {
         return hashedInput.slice(0, options.length);

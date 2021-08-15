@@ -500,9 +500,6 @@ export class SapDriver implements Driver {
         } else if (column.type === Boolean) {
             return "boolean";
 
-        } else if ((column.type as any) === Buffer) {
-            return "blob";
-
         } else if (column.type === "uuid") {
             return "nvarchar";
 

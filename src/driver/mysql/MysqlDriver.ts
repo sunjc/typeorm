@@ -595,9 +595,6 @@ export class MysqlDriver implements Driver {
         } else if (column.type === Date) {
             return "datetime";
 
-        } else if ((column.type as any) === Buffer) {
-            return "blob";
-
         } else if (column.type === Boolean) {
             return "tinyint";
 

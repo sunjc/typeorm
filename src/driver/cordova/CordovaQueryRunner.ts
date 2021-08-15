@@ -12,11 +12,6 @@ import { QueryResult } from "../../query-runner/QueryResult.ts";
  */
 export class CordovaQueryRunner extends AbstractSqliteQueryRunner {
 
-    /**
-     * Database driver used by connection.
-     */
-    driver: CordovaDriver;
-
     // -------------------------------------------------------------------------
     // Constructor
     // -------------------------------------------------------------------------

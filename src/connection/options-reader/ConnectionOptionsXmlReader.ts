@@ -1,4 +1,4 @@
-import {parseString as xmlParser} from 'xml2js';
+import {parse as xmlParser} from 'https://deno.land/x/xml/mod.ts';
 import {PlatformTools} from "../../platform/PlatformTools.ts";
 import {ConnectionOptions} from "../ConnectionOptions.ts";
 

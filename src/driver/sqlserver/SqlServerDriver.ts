@@ -530,9 +530,6 @@ export class SqlServerDriver implements Driver {
         } else if (column.type === Boolean) {
             return "bit";
 
-        } else if ((column.type as any) === Buffer) {
-            return "binary";
-
         } else if (column.type === "uuid") {
             return "uniqueidentifier";
 

@@ -512,9 +512,6 @@ export class OracleDriver implements Driver {
         } else if (column.type === Date) {
             return "timestamp";
 
-        } else if ((column.type as any) === Buffer) {
-            return "blob";
-
         } else if (column.type === "uuid") {
             return "varchar2";
 

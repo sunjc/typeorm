@@ -128,7 +128,7 @@ export class SubjectChangedColumnsComputer {
                 }
 
                 // if value is not changed - then do nothing
-                if (normalizedValue instanceof Buffer && databaseValue instanceof Buffer) {
+                /*if (normalizedValue instanceof Buffer && databaseValue instanceof Buffer) {
                     if (normalizedValue.equals(databaseValue)) {
                         return;
                     }
@@ -136,7 +136,7 @@ export class SubjectChangedColumnsComputer {
                 } else {
                     if (normalizedValue === databaseValue)
                         return;
-                }
+                }*/
             }
             subject.diffColumns.push(column);
             subject.changeMaps.push({

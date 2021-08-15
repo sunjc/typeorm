@@ -111,7 +111,7 @@ export interface TableColumnOptions {
     /**
      * Array of possible enumerated values.
      */
-    enum?: string[];
+    enum?: (string|number)[];
 
     /**
      * Exact name of enum

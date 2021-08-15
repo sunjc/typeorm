@@ -1,5 +1,4 @@
-import mkdirp from 'mkdirp';
-import path from 'path';
+import { dirname } from 'https://deno.land/std/path/mod.ts';
 import { DriverPackageNotInstalledError } from "../../error/DriverPackageNotInstalledError.ts";
 import { SqliteQueryRunner } from "./SqliteQueryRunner.ts";
 import { DriverOptionNotSetError } from "../../error/DriverOptionNotSetError.ts";
@@ -74,9 +73,6 @@ export class SqliteDriver extends AbstractSqliteDriver {
     }
 
     normalizeType(column: { type?: ColumnType, length?: number | string, precision?: number | null, scale?: number }): string {
-        if ((column.type as any) === Buffer) {
-            return "blob";
-        }
 
         return super.normalizeType(column);
     }
@@ -140,7 +136,7 @@ export class SqliteDriver extends AbstractSqliteDriver {
      * Auto creates database directory if it does not exist.
      */
     protected async createDatabaseDirectory(fullPath: string): Promise<void> {
-        await mkdirp(path.dirname(fullPath));
+        await Deno.mkdir(dirname(fullPath));
     }
 
 }

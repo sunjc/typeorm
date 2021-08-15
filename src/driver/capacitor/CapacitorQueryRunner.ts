@@ -10,10 +10,6 @@ import { QueryResult } from "../../query-runner/QueryResult.ts";
  * Runs queries on a single sqlite database connection.
  */
 export class CapacitorQueryRunner extends AbstractSqliteQueryRunner {
-    /**
-     * Database driver used by connection.
-     */
-    driver: CapacitorDriver;
 
     // -------------------------------------------------------------------------
     // Constructor

@@ -1,5 +1,3 @@
-import {TlsOptions} from "tls";
-
 /**
  * Cockroachdb specific connection credential options.
  */
@@ -38,6 +36,6 @@ export interface CockroachConnectionCredentialsOptions {
     /**
      * Object with ssl parameters
      */
-    readonly ssl?: boolean | TlsOptions;
+    readonly ssl?: boolean | Deno.ListenTlsOptions;
 
 }

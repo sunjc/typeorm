@@ -15,11 +15,6 @@ import { QueryResult } from "../../query-runner/QueryResult.ts";
  */
 export class SqliteQueryRunner extends AbstractSqliteQueryRunner {
 
-    /**
-     * Database driver used by connection.
-     */
-    driver: SqliteDriver;
-
     // -------------------------------------------------------------------------
     // Constructor
     // -------------------------------------------------------------------------

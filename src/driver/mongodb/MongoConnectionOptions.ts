@@ -67,13 +67,13 @@ export interface MongoConnectionOptions extends BaseConnectionOptions {
      * Array of valid certificates either as Buffers or Strings
      * (needs to have a mongod server with ssl support, 2.4 or higher).
      */
-    readonly sslCA?: string[]|Buffer[];
+    readonly sslCA?: string[];
 
     /**
      * String or buffer containing the certificate we wish to present
      * (needs to have a mongod server with ssl support, 2.4 or higher)
      */
-    readonly sslCert?: string|Buffer;
+    readonly sslCert?: string;
 
     /**
      * String or buffer containing the certificate private key we wish to present
@@ -85,13 +85,13 @@ export interface MongoConnectionOptions extends BaseConnectionOptions {
      * String or buffer containing the certificate password
      * (needs to have a mongod server with ssl support, 2.4 or higher)
      */
-    readonly sslPass?: string|Buffer;
+    readonly sslPass?: string;
 
     /**
      * SSL Certificate revocation list binary buffer
      * (needs to have a mongod server with ssl support, 2.4 or higher)
      */
-    readonly sslCRL?: string|Buffer;
+    readonly sslCRL?: string;
 
     /**
      * Reconnect on error. Default: true

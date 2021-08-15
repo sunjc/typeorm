@@ -1,5 +1,3 @@
-import mkdirp from 'mkdirp';
-import path from 'path';
 import { DriverPackageNotInstalledError } from "../../error/DriverPackageNotInstalledError.ts";
 import { DriverOptionNotSetError } from "../../error/DriverOptionNotSetError.ts";
 import { PlatformTools } from "../../platform/PlatformTools.ts";
@@ -72,9 +70,6 @@ export class BetterSqlite3Driver extends AbstractSqliteDriver {
     }
 
     normalizeType(column: { type?: ColumnType, length?: number | string, precision?: number | null, scale?: number }): string {
-        if ((column.type as any) === Buffer) {
-            return "blob";
-        }
 
         return super.normalizeType(column);
     }
@@ -136,7 +131,7 @@ export class BetterSqlite3Driver extends AbstractSqliteDriver {
      * Auto creates database directory if it does not exist.
      */
     protected async createDatabaseDirectory(fullPath: string): Promise<void> {
-        await mkdirp(path.dirname(fullPath));
+        await Deno.mkdir(fullPath);
     }
 
 }

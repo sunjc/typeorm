@@ -42,11 +42,6 @@ export class AuroraDataApiPostgresDriver extends PostgresWrapper implements Driv
      */
     options: AuroraDataApiPostgresConnectionOptions;
 
-    /**
-     * Master database used to perform all write queries.
-     */
-    database?: string;
-
     // -------------------------------------------------------------------------
     // Constructor
     // -------------------------------------------------------------------------
