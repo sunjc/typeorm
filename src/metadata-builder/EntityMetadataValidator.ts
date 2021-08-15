@@ -11,7 +11,7 @@ import {MysqlDriver} from "../driver/mysql/MysqlDriver.ts";
 import {NoConnectionOptionError} from "../error/NoConnectionOptionError.ts";
 import {InitializedRelationError} from "../error/InitializedRelationError.ts";
 import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /// todo: add check if there are multiple tables with the same name
 /// todo: add checks when generated column / table names are too long for the specific driver

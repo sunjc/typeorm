@@ -24,7 +24,7 @@ import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver.ts";
 import {PostgresDriver} from "../driver/postgres/PostgresDriver.ts";
 import {ExclusionMetadata} from "../metadata/ExclusionMetadata.ts";
 import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Builds EntityMetadata objects and all its sub-metadatas.

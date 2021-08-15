@@ -6,7 +6,7 @@ import { Connection } from "../../connection/Connection.ts";
 import {
     DriverOptionNotSetError,
     DriverPackageNotInstalledError,
-} from "../../error.ts";
+} from "../../error/index.ts";
 import { ReplicationMode } from "../types/ReplicationMode.ts";
 
 export class CapacitorDriver extends AbstractSqliteDriver {

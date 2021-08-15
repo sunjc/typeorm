@@ -1,6 +1,6 @@
 import {getMetadataArgsStorage} from "../globals.ts";
 import {CheckMetadataArgs} from "../metadata-args/CheckMetadataArgs.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Creates a database check.

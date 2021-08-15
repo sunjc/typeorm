@@ -1,6 +1,6 @@
 import {EntityMetadata} from "../metadata/EntityMetadata.ts";
 import {ObjectUtils} from "../util/ObjectUtils.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  */

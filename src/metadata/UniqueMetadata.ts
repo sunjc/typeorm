@@ -3,7 +3,7 @@ import {EntityMetadata} from "./EntityMetadata.ts";
 import {NamingStrategyInterface} from "../naming-strategy/NamingStrategyInterface.ts";
 import {ColumnMetadata} from "./ColumnMetadata.ts";
 import {UniqueMetadataArgs} from "../metadata-args/UniqueMetadataArgs.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Unique metadata contains all information about table's unique constraints.

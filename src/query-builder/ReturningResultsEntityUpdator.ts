@@ -5,7 +5,7 @@ import {ColumnMetadata} from "../metadata/ColumnMetadata.ts";
 import {UpdateResult} from "./result/UpdateResult.ts";
 import {InsertResult} from "./result/InsertResult.ts";
 import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Updates entity with returning results in the entity insert and update operations.

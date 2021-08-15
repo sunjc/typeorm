@@ -3,7 +3,7 @@ import {IndexMetadataArgs} from "../metadata-args/IndexMetadataArgs.ts";
 import {NamingStrategyInterface} from "../naming-strategy/NamingStrategyInterface.ts";
 import {ColumnMetadata} from "./ColumnMetadata.ts";
 import {EmbeddedMetadata} from "./EmbeddedMetadata.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Index metadata contains all information about table's index.

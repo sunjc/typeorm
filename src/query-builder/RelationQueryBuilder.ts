@@ -1,7 +1,7 @@
 import {QueryBuilder} from "./QueryBuilder.ts";
 import {RelationUpdater} from "./RelationUpdater.ts";
 import {RelationRemover} from "./RelationRemover.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Allows to work with entity relations and perform specific operations with those relations.

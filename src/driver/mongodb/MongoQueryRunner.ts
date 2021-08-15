@@ -46,7 +46,7 @@ import {TableUnique} from "../../schema-builder/table/TableUnique.ts";
 import {Broadcaster} from "../../subscriber/Broadcaster.ts";
 import {TableCheck} from "../../schema-builder/table/TableCheck.ts";
 import {TableExclusion} from "../../schema-builder/table/TableExclusion.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 
 /**
  * Runs queries on a single MongoDB connection.

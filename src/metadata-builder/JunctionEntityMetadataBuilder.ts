@@ -8,7 +8,7 @@ import {JoinTableMetadataArgs} from "../metadata-args/JoinTableMetadataArgs.ts";
 import {RelationMetadata} from "../metadata/RelationMetadata.ts";
 import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver.ts";
 import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Creates EntityMetadata for junction tables.

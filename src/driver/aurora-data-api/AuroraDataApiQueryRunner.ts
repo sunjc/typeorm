@@ -22,7 +22,7 @@ import {TableCheck} from "../../schema-builder/table/TableCheck.ts";
 import {IsolationLevel} from "../types/IsolationLevel.ts";
 import {TableExclusion} from "../../schema-builder/table/TableExclusion.ts";
 import {BroadcasterResult} from "../../subscriber/BroadcasterResult.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 
 /**
  * Runs queries on a single mysql database connection.

@@ -22,7 +22,7 @@ import {ReplicationMode} from "../types/ReplicationMode.ts";
 import { Table } from "../../schema-builder/table/Table.ts";
 import { View } from "../../schema-builder/view/View.ts";
 import { TableForeignKey } from "../../schema-builder/table/TableForeignKey.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 
 /**
  * Organizes communication with Oracle RDBMS.

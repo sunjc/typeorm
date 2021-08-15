@@ -4,7 +4,7 @@ import {PlatformTools} from "../platform/PlatformTools.ts";
 import {ConnectionOptionsEnvReader} from "./options-reader/ConnectionOptionsEnvReader.ts";
 import {ConnectionOptionsYmlReader} from "./options-reader/ConnectionOptionsYmlReader.ts";
 import {ConnectionOptionsXmlReader} from "./options-reader/ConnectionOptionsXmlReader.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Reads connection options from the ormconfig.

@@ -7,7 +7,7 @@ import {JoinColumnMetadataArgs} from "../metadata-args/JoinColumnMetadataArgs.ts
 import {Connection} from "../connection/Connection.ts";
 import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
 import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Builds join column for the many-to-one and one-to-one owner relations.

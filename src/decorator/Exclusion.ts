@@ -1,6 +1,6 @@
 import {getMetadataArgsStorage} from "../globals.ts";
 import {ExclusionMetadataArgs} from "../metadata-args/ExclusionMetadataArgs.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Creates a database exclusion.

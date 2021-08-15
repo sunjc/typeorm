@@ -37,7 +37,7 @@ import {ObjectUtils} from "../util/ObjectUtils.ts";
 import {EntitySchema} from "../entity-schema/EntitySchema.ts";
 import {ObjectLiteral} from "../common/ObjectLiteral.ts";
 import {getMetadataArgsStorage} from "../globals.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Entity manager supposed to work with any entity, automatically find its repository and call its methods,

@@ -22,7 +22,7 @@ import {IsolationLevel} from "../types/IsolationLevel.ts";
 import {SapDriver} from "./SapDriver.ts";
 import {ReplicationMode} from "../types/ReplicationMode.ts";
 import {BroadcasterResult} from "../../subscriber/BroadcasterResult.ts";
-import { QueryFailedError, TypeORMError } from "../../error.ts";
+import { QueryFailedError, TypeORMError } from "../../error/index.ts";
 import { QueryResult } from "../../query-runner/QueryResult.ts";
 import { QueryLock } from "../../query-runner/QueryLock.ts";
 

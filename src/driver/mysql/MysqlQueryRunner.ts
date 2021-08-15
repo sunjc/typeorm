@@ -25,7 +25,7 @@ import {TableExclusion} from "../../schema-builder/table/TableExclusion.ts";
 import {VersionUtils} from "../../util/VersionUtils.ts";
 import {ReplicationMode} from "../types/ReplicationMode.ts";
 import {BroadcasterResult} from "../../subscriber/BroadcasterResult.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 
 /**
  * Runs queries on a single mysql database connection.

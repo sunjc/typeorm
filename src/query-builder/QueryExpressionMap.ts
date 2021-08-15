@@ -10,7 +10,7 @@ import {SelectQuery} from "./SelectQuery.ts";
 import {ColumnMetadata} from "../metadata/ColumnMetadata.ts";
 import {RelationMetadata} from "../metadata/RelationMetadata.ts";
 import {SelectQueryBuilderOption} from "./SelectQueryBuilderOption.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 import { WhereClause } from "./WhereClause.ts";
 
 /**

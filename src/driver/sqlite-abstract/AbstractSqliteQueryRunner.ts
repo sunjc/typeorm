@@ -19,7 +19,7 @@ import {OrmUtils} from "../../util/OrmUtils.ts";
 import {TableCheck} from "../../schema-builder/table/TableCheck.ts";
 import {IsolationLevel} from "../types/IsolationLevel.ts";
 import {TableExclusion} from "../../schema-builder/table/TableExclusion.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 
 /**
  * Runs queries on a single sqlite database connection.

@@ -4,7 +4,7 @@ import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder.ts";
 import {FindRelationsNotFoundError} from "../error/FindRelationsNotFoundError.ts";
 import {EntityMetadata} from "../metadata/EntityMetadata.ts";
 import {DriverUtils} from "../driver/DriverUtils.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Utilities to work with FindOptions.

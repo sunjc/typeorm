@@ -22,7 +22,7 @@ import {IsolationLevel} from "../types/IsolationLevel.ts";
 import {TableExclusion} from "../../schema-builder/table/TableExclusion.ts";
 import {ReplicationMode} from "../types/ReplicationMode.ts";
 import {BroadcasterResult} from "../../subscriber/BroadcasterResult.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 import { QueryResult } from "../../query-runner/QueryResult.ts";
 
 /**

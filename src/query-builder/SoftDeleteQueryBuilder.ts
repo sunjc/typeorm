@@ -19,7 +19,7 @@ import {MissingDeleteDateColumnError} from "../error/MissingDeleteDateColumnErro
 import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
 import {UpdateValuesMissingError} from "../error/UpdateValuesMissingError.ts";
 import {EntitySchema} from "../entity-schema/EntitySchema.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Allows to build complex sql queries in a fashion way and execute those queries.

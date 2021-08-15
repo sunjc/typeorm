@@ -5,7 +5,7 @@ import {QueryBuilderUtils} from "./QueryBuilderUtils.ts";
 import {QueryExpressionMap} from "./QueryExpressionMap.ts";
 import {Alias} from "./Alias.ts";
 import {ObjectUtils} from "../util/ObjectUtils.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Stores all join attributes which will be used to build a JOIN query.

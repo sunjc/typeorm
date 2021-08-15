@@ -4,7 +4,7 @@ import {QueryFailedError} from "../../error/QueryFailedError.ts";
 import {AbstractSqliteQueryRunner} from "../sqlite-abstract/AbstractSqliteQueryRunner.ts";
 import {CordovaDriver} from "./CordovaDriver.ts";
 import {Broadcaster} from "../../subscriber/Broadcaster.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 import { QueryResult } from "../../query-runner/QueryResult.ts";
 
 /**

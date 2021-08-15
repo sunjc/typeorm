@@ -2,7 +2,7 @@ import {RelationCountMetadataArgs} from "../metadata-args/RelationCountMetadataA
 import {EntityMetadata} from "./EntityMetadata.ts";
 import {RelationMetadata} from "./RelationMetadata.ts";
 import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Contains all information about entity's relation count.

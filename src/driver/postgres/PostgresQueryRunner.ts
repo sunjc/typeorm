@@ -24,7 +24,7 @@ import {PostgresDriver} from "./PostgresDriver.ts";
 import {ReplicationMode} from "../types/ReplicationMode.ts";
 import {BroadcasterResult} from "../../subscriber/BroadcasterResult.ts";
 import {VersionUtils} from "../../util/VersionUtils.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 import { QueryResult } from "../../query-runner/QueryResult.ts";
 
 /**

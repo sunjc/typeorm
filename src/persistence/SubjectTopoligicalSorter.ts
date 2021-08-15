@@ -1,6 +1,6 @@
 import {Subject} from "./Subject.ts";
 import {EntityMetadata} from "../metadata/EntityMetadata.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Orders insert or remove subjects in proper order (using topological sorting)

@@ -3,7 +3,7 @@ import {QueryBuilder} from "./QueryBuilder.ts";
 import {ObjectLiteral} from "../common/ObjectLiteral.ts";
 import {QueryExpressionMap} from "./QueryExpressionMap.ts";
 import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Allows to work with entity relations and perform specific operations with those relations.

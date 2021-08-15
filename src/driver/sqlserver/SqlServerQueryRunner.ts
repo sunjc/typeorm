@@ -25,7 +25,7 @@ import {MssqlParameter} from "./MssqlParameter.ts";
 import {SqlServerDriver} from "./SqlServerDriver.ts";
 import {ReplicationMode} from "../types/ReplicationMode.ts";
 import {BroadcasterResult} from "../../subscriber/BroadcasterResult.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 import { QueryLock } from "../../query-runner/QueryLock.ts";
 
 /**

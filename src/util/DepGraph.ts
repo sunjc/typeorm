@@ -8,7 +8,7 @@
  * A simple dependency graph
  */
 
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Helper for creating a Depth-First-Search on

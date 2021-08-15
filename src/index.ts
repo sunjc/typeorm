@@ -11,7 +11,7 @@ export * from "./common/EntityTarget.ts";
 export * from "./common/ObjectType.ts";
 export * from "./common/ObjectLiteral.ts";
 export * from "./common/DeepPartial.ts";
-export * from "./error.ts";
+export * from "./error/index.ts";
 export * from "./decorator/columns/Column.ts";
 export * from "./decorator/columns/CreateDateColumn.ts";
 export * from "./decorator/columns/DeleteDateColumn.ts";

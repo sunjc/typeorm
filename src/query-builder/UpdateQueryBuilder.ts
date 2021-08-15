@@ -21,7 +21,7 @@ import {UpdateValuesMissingError} from "../error/UpdateValuesMissingError.ts";
 import {EntityColumnNotFound} from "../error/EntityColumnNotFound.ts";
 import {QueryDeepPartialEntity} from "./QueryPartialEntity.ts";
 import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Allows to build complex sql queries in a fashion way and execute those queries.

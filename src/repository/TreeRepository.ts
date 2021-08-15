@@ -4,7 +4,7 @@ import {ObjectLiteral} from "../common/ObjectLiteral.ts";
 import {AbstractSqliteDriver} from "../driver/sqlite-abstract/AbstractSqliteDriver.ts";
 import { TypeORMError } from "../error/TypeORMError.ts";
 import { FindTreeOptions } from "../find-options/FindTreeOptions.ts";
-import { FindRelationsNotFoundError } from "../error.ts";
+import { FindRelationsNotFoundError } from "../error/index.ts";
 import { FindOptionsUtils } from "../find-options/FindOptionsUtils.ts";
 
 /**

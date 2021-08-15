@@ -15,7 +15,7 @@ import {OrmUtils} from "../../util/OrmUtils.ts";
 import {ApplyValueTransformers} from "../../util/ApplyValueTransformers.ts";
 import {ReplicationMode} from "../types/ReplicationMode.ts";
 import {DriverUtils} from "../DriverUtils.ts";
-import { TypeORMError } from "../../error.ts";
+import { TypeORMError } from "../../error/index.ts";
 import { Table } from "../../schema-builder/table/Table.ts";
 import { View } from "../../schema-builder/view/View.ts";
 import { TableForeignKey } from "../../schema-builder/table/TableForeignKey.ts";

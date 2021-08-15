@@ -3,7 +3,7 @@ import {EntityMetadata} from "./EntityMetadata.ts";
 import {RelationMetadata} from "./RelationMetadata.ts";
 import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder.ts";
 import {ObjectLiteral} from "../common/ObjectLiteral.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Contains all information about entity's relation count.

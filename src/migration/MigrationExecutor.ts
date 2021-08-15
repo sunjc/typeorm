@@ -7,7 +7,7 @@ import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver.ts";
 import {MssqlParameter} from "../driver/sqlserver/MssqlParameter.ts";
 import {MongoDriver} from "../driver/mongodb/MongoDriver.ts";
 import {MongoQueryRunner} from "../driver/mongodb/MongoQueryRunner.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Executes migrations: runs pending and reverts previously executed migrations.

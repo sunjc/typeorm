@@ -38,7 +38,7 @@ import {DriverUtils} from "../driver/DriverUtils.ts";
 import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver.ts";
 import {CockroachDriver} from "../driver/cockroachdb/CockroachDriver.ts";
 import {EntityNotFoundError} from "../error/EntityNotFoundError.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Allows to build complex sql queries in a fashion way and execute those queries.

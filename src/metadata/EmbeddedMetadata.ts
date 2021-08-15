@@ -9,7 +9,7 @@ import {MongoDriver} from "../driver/mongodb/MongoDriver.ts";
 import {EntityListenerMetadata} from "./EntityListenerMetadata.ts";
 import {IndexMetadata} from "./IndexMetadata.ts";
 import {UniqueMetadata} from "./UniqueMetadata.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 
 /**
  * Contains all information about entity's embedded property.

@@ -22,7 +22,7 @@ import {EntitySchema} from "../entity-schema/EntitySchema.ts";
 import {FindOperator} from "../find-options/FindOperator.ts";
 import {In} from "../find-options/operator/In.ts";
 import {EntityColumnNotFound} from "../error/EntityColumnNotFound.ts";
-import { TypeORMError } from "../error.ts";
+import { TypeORMError } from "../error/index.ts";
 import { WhereClause, WhereClauseCondition } from "./WhereClause.ts";
 
 // todo: completely cover query builder with tests
