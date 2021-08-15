@@ -1,11 +1,11 @@
-import {Subject} from "../Subject";
-import {QueryRunner} from "../../query-runner/QueryRunner";
-import {ObjectLiteral} from "../../common/ObjectLiteral";
-import {CannotAttachTreeChildrenEntityError} from "../../error/CannotAttachTreeChildrenEntityError";
-import {DeleteQueryBuilder} from "../../query-builder/DeleteQueryBuilder";
-import {OrmUtils} from "../../util/OrmUtils";
-import {SqlServerDriver} from "../../driver/sqlserver/SqlServerDriver";
-import {ColumnMetadata} from "../../metadata/ColumnMetadata";
+import {Subject} from "../Subject.ts";
+import {QueryRunner} from "../../query-runner/QueryRunner.ts";
+import {ObjectLiteral} from "../../common/ObjectLiteral.ts";
+import {CannotAttachTreeChildrenEntityError} from "../../error/CannotAttachTreeChildrenEntityError.ts";
+import {DeleteQueryBuilder} from "../../query-builder/DeleteQueryBuilder.ts";
+import {OrmUtils} from "../../util/OrmUtils.ts";
+import {SqlServerDriver} from "../../driver/sqlserver/SqlServerDriver.ts";
+import {ColumnMetadata} from "../../metadata/ColumnMetadata.ts";
 
 /**
  * Executes subject operations for closure entities.
@@ -164,7 +164,7 @@ export class ClosureSubjectExecutor {
 
         /**
          * Only insert new parent if it exits
-         * 
+         *
          * This only happens if the entity doesn't become a root entity
          */
         if (parent) {

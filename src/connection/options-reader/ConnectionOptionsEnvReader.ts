@@ -1,6 +1,6 @@
-import {ConnectionOptions} from "../ConnectionOptions";
-import {PlatformTools} from "../../platform/PlatformTools";
-import {OrmUtils} from "../../util/OrmUtils";
+import {ConnectionOptions} from "../ConnectionOptions.ts";
+import {PlatformTools} from "../../platform/PlatformTools.ts";
+import {OrmUtils} from "../../util/OrmUtils.ts";
 
 /**
  * Reads connection options from environment variables.

@@ -1,6 +1,6 @@
 import ymlParser from 'js-yaml';
-import {PlatformTools} from "../../platform/PlatformTools";
-import {ConnectionOptions} from "../ConnectionOptions";
+import {PlatformTools} from "../../platform/PlatformTools.ts";
+import {ConnectionOptions} from "../ConnectionOptions.ts";
 
 /**
  * Reads connection options defined in the yml file.

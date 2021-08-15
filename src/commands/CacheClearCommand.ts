@@ -1,8 +1,8 @@
-import {createConnection} from "../globals";
-import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader";
-import {Connection} from "../connection/Connection";
-import * as yargs from "yargs";
-import chalk from "chalk";
+import {createConnection} from "../globals.ts";
+import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader.ts";
+import {Connection} from "../connection/Connection.ts";
+import * as yargs from "yargs.ts";
+import chalk from "chalk.ts";
 
 /**
  * Clear cache command.

@@ -1,6 +1,6 @@
-import {EntityMetadata} from "../metadata/EntityMetadata";
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {TypeORMError} from "./TypeORMError";
+import {EntityMetadata} from "../metadata/EntityMetadata.ts";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when user tries to create entity id map from the mixed id value,

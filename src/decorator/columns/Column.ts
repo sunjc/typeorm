@@ -1,4 +1,4 @@
-import {getMetadataArgsStorage} from "../../globals";
+import {getMetadataArgsStorage} from "../../globals.ts";
 import {
     ColumnType,
     SimpleColumnType,
@@ -6,20 +6,20 @@ import {
     WithLengthColumnType,
     WithPrecisionColumnType,
     WithWidthColumnType,
-} from "../../driver/types/ColumnTypes";
-import {ColumnMetadataArgs} from "../../metadata-args/ColumnMetadataArgs";
-import {ColumnCommonOptions} from "../options/ColumnCommonOptions";
-import {SpatialColumnOptions} from "../options/SpatialColumnOptions";
-import {ColumnWithLengthOptions} from "../options/ColumnWithLengthOptions";
-import {ColumnNumericOptions} from "../options/ColumnNumericOptions";
-import {ColumnEnumOptions} from "../options/ColumnEnumOptions";
-import {ColumnEmbeddedOptions} from "../options/ColumnEmbeddedOptions";
-import {EmbeddedMetadataArgs} from "../../metadata-args/EmbeddedMetadataArgs";
-import {ColumnTypeUndefinedError} from "../../error/ColumnTypeUndefinedError";
-import {ColumnHstoreOptions} from "../options/ColumnHstoreOptions";
-import {ColumnWithWidthOptions} from "../options/ColumnWithWidthOptions";
-import {GeneratedMetadataArgs} from "../../metadata-args/GeneratedMetadataArgs";
-import {ColumnOptions} from "../options/ColumnOptions";
+} from "../../driver/types/ColumnTypes.ts";
+import {ColumnMetadataArgs} from "../../metadata-args/ColumnMetadataArgs.ts";
+import {ColumnCommonOptions} from "../options/ColumnCommonOptions.ts";
+import {SpatialColumnOptions} from "../options/SpatialColumnOptions.ts";
+import {ColumnWithLengthOptions} from "../options/ColumnWithLengthOptions.ts";
+import {ColumnNumericOptions} from "../options/ColumnNumericOptions.ts";
+import {ColumnEnumOptions} from "../options/ColumnEnumOptions.ts";
+import {ColumnEmbeddedOptions} from "../options/ColumnEmbeddedOptions.ts";
+import {EmbeddedMetadataArgs} from "../../metadata-args/EmbeddedMetadataArgs.ts";
+import {ColumnTypeUndefinedError} from "../../error/ColumnTypeUndefinedError.ts";
+import {ColumnHstoreOptions} from "../options/ColumnHstoreOptions.ts";
+import {ColumnWithWidthOptions} from "../options/ColumnWithWidthOptions.ts";
+import {GeneratedMetadataArgs} from "../../metadata-args/GeneratedMetadataArgs.ts";
+import {ColumnOptions} from "../options/ColumnOptions.ts";
 
 /**
  * Column decorator is used to mark a specific class property as a table column. Only properties decorated with this
