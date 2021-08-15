@@ -1,4 +1,4 @@
-import {TypeORMError} from "./TypeORMError";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when required driver's package is not installed.

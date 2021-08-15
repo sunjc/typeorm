@@ -1,6 +1,6 @@
-import {getMetadataArgsStorage} from "../../globals";
-import {TransactionRepositoryMetadataArgs} from "../../metadata-args/TransactionRepositoryMetadataArgs";
-import {CannotReflectMethodParameterTypeError} from "../../error/CannotReflectMethodParameterTypeError";
+import {getMetadataArgsStorage} from "../../globals.ts";
+import {TransactionRepositoryMetadataArgs} from "../../metadata-args/TransactionRepositoryMetadataArgs.ts";
+import {CannotReflectMethodParameterTypeError} from "../../error/CannotReflectMethodParameterTypeError.ts";
 
 /**
  * Injects transaction's repository into the method wrapped with @Transaction decorator.

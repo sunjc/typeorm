@@ -1,17 +1,17 @@
-import {CockroachDriver} from "../driver/cockroachdb/CockroachDriver";
-import {QueryBuilder} from "./QueryBuilder";
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {EntityTarget} from "../common/EntityTarget";
-import {Connection} from "../connection/Connection";
-import {QueryRunner} from "../query-runner/QueryRunner";
-import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver";
-import {PostgresDriver} from "../driver/postgres/PostgresDriver";
-import {WhereExpressionBuilder} from "./WhereExpressionBuilder";
-import {Brackets} from "./Brackets";
-import {DeleteResult} from "./result/DeleteResult";
-import {ReturningStatementNotSupportedError} from "../error/ReturningStatementNotSupportedError";
-import {BroadcasterResult} from "../subscriber/BroadcasterResult";
-import {EntitySchema} from "../entity-schema/EntitySchema";
+import {CockroachDriver} from "../driver/cockroachdb/CockroachDriver.ts";
+import {QueryBuilder} from "./QueryBuilder.ts";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {EntityTarget} from "../common/EntityTarget.ts";
+import {Connection} from "../connection/Connection.ts";
+import {QueryRunner} from "../query-runner/QueryRunner.ts";
+import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver.ts";
+import {PostgresDriver} from "../driver/postgres/PostgresDriver.ts";
+import {WhereExpressionBuilder} from "./WhereExpressionBuilder.ts";
+import {Brackets} from "./Brackets.ts";
+import {DeleteResult} from "./result/DeleteResult.ts";
+import {ReturningStatementNotSupportedError} from "../error/ReturningStatementNotSupportedError.ts";
+import {BroadcasterResult} from "../subscriber/BroadcasterResult.ts";
+import {EntitySchema} from "../entity-schema/EntitySchema.ts";
 
 /**
  * Allows to build complex sql queries in a fashion way and execute those queries.

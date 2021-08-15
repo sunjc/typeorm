@@ -1,4 +1,4 @@
-import {TypeORMError} from "./TypeORMError";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when method expects entity but instead something else is given.

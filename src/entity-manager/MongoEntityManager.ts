@@ -1,6 +1,6 @@
-import { Connection } from "../connection/Connection";
-import { EntityManager } from "./EntityManager";
-import { EntityTarget } from "../common/EntityTarget";
+import { Connection } from "../connection/Connection.ts";
+import { EntityManager } from "./EntityManager.ts";
+import { EntityTarget } from "../common/EntityTarget.ts";
 import {
     AggregationCursor,
     BulkWriteOpResultObject,
@@ -36,23 +36,23 @@ import {
     ReplaceOneOptions,
     UnorderedBulkOperation,
     UpdateWriteOpResult
-} from "../driver/mongodb/typings";
-import { ObjectLiteral } from "../common/ObjectLiteral";
-import { MongoQueryRunner } from "../driver/mongodb/MongoQueryRunner";
-import { MongoDriver } from "../driver/mongodb/MongoDriver";
-import { DocumentToEntityTransformer } from "../query-builder/transformer/DocumentToEntityTransformer";
-import { FindManyOptions } from "../find-options/FindManyOptions";
-import { FindOptionsUtils } from "../find-options/FindOptionsUtils";
-import { FindOneOptions } from "../find-options/FindOneOptions";
-import { PlatformTools } from "../platform/PlatformTools";
-import { DeepPartial } from "../common/DeepPartial";
-import { QueryDeepPartialEntity } from "../query-builder/QueryPartialEntity";
-import { InsertResult } from "../query-builder/result/InsertResult";
-import { UpdateResult } from "../query-builder/result/UpdateResult";
-import { DeleteResult } from "../query-builder/result/DeleteResult";
-import { EntityMetadata } from "../metadata/EntityMetadata";
-import { FindConditions } from "../find-options/FindConditions";
-import { BroadcasterResult } from "../subscriber/BroadcasterResult";
+} from "../driver/mongodb/typings.ts";
+import { ObjectLiteral } from "../common/ObjectLiteral.ts";
+import { MongoQueryRunner } from "../driver/mongodb/MongoQueryRunner.ts";
+import { MongoDriver } from "../driver/mongodb/MongoDriver.ts";
+import { DocumentToEntityTransformer } from "../query-builder/transformer/DocumentToEntityTransformer.ts";
+import { FindManyOptions } from "../find-options/FindManyOptions.ts";
+import { FindOptionsUtils } from "../find-options/FindOptionsUtils.ts";
+import { FindOneOptions } from "../find-options/FindOneOptions.ts";
+import { PlatformTools } from "../platform/PlatformTools.ts";
+import { DeepPartial } from "../common/DeepPartial.ts";
+import { QueryDeepPartialEntity } from "../query-builder/QueryPartialEntity.ts";
+import { InsertResult } from "../query-builder/result/InsertResult.ts";
+import { UpdateResult } from "../query-builder/result/UpdateResult.ts";
+import { DeleteResult } from "../query-builder/result/DeleteResult.ts";
+import { EntityMetadata } from "../metadata/EntityMetadata.ts";
+import { FindConditions } from "../find-options/FindConditions.ts";
+import { BroadcasterResult } from "../subscriber/BroadcasterResult.ts";
 
 /**
  * Entity manager supposed to work with any entity, automatically find its repository and call its methods,

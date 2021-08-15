@@ -1,4 +1,4 @@
-import {TypeORMError} from "./TypeORMError";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when an entity does not have no version and no update date column.

@@ -1,4 +1,4 @@
-import {TypeORMError} from "./TypeORMError";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when user tries to insert using QueryBuilder but do not specify what to insert.

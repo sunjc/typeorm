@@ -1,11 +1,11 @@
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {QueryRunner} from "../query-runner/QueryRunner";
-import {QueryExpressionMap} from "./QueryExpressionMap";
-import {ColumnMetadata} from "../metadata/ColumnMetadata";
-import {UpdateResult} from "./result/UpdateResult";
-import {InsertResult} from "./result/InsertResult";
-import {OracleDriver} from "../driver/oracle/OracleDriver";
-import { TypeORMError } from "../error";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {QueryRunner} from "../query-runner/QueryRunner.ts";
+import {QueryExpressionMap} from "./QueryExpressionMap.ts";
+import {ColumnMetadata} from "../metadata/ColumnMetadata.ts";
+import {UpdateResult} from "./result/UpdateResult.ts";
+import {InsertResult} from "./result/InsertResult.ts";
+import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
+import { TypeORMError } from "../error.ts";
 
 /**
  * Updates entity with returning results in the entity insert and update operations.

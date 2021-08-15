@@ -1,6 +1,6 @@
-import {getMetadataArgsStorage} from "../globals";
-import {EntityRepositoryMetadataArgs} from "../metadata-args/EntityRepositoryMetadataArgs";
-import {EntitySchema} from "../entity-schema/EntitySchema";
+import {getMetadataArgsStorage} from "../globals.ts";
+import {EntityRepositoryMetadataArgs} from "../metadata-args/EntityRepositoryMetadataArgs.ts";
+import {EntitySchema} from "../entity-schema/EntitySchema.ts";
 
 /**
  * Used to declare a class as a custom repository.

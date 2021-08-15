@@ -1,10 +1,10 @@
-import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
-import {ExpoConnectionOptions} from "./ExpoConnectionOptions";
-import {ExpoQueryRunner} from "./ExpoQueryRunner";
-import {QueryRunner} from "../../query-runner/QueryRunner";
-import {Connection} from "../../connection/Connection";
-import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError";
-import {ReplicationMode} from "../types/ReplicationMode";
+import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver.ts";
+import {ExpoConnectionOptions} from "./ExpoConnectionOptions.ts";
+import {ExpoQueryRunner} from "./ExpoQueryRunner.ts";
+import {QueryRunner} from "../../query-runner/QueryRunner.ts";
+import {Connection} from "../../connection/Connection.ts";
+import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError.ts";
+import {ReplicationMode} from "../types/ReplicationMode.ts";
 
 export class ExpoDriver extends AbstractSqliteDriver {
     options: ExpoConnectionOptions;

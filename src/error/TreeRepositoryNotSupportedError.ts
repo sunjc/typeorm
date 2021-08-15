@@ -1,5 +1,5 @@
-import {Driver} from "../driver/Driver";
-import {TypeORMError} from "./TypeORMError";
+import {Driver} from "../driver/Driver.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 export class TreeRepositoryNotSupportedError extends TypeORMError {
     constructor(driver: Driver) {

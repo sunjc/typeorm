@@ -1,13 +1,13 @@
-import {Table} from "../schema-builder/table/Table";
-import {Connection} from "../connection/Connection";
-import {Migration} from "./Migration";
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {QueryRunner} from "../query-runner/QueryRunner";
-import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver";
-import {MssqlParameter} from "../driver/sqlserver/MssqlParameter";
-import {MongoDriver} from "../driver/mongodb/MongoDriver";
-import {MongoQueryRunner} from "../driver/mongodb/MongoQueryRunner";
-import { TypeORMError } from "../error";
+import {Table} from "../schema-builder/table/Table.ts";
+import {Connection} from "../connection/Connection.ts";
+import {Migration} from "./Migration.ts";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {QueryRunner} from "../query-runner/QueryRunner.ts";
+import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver.ts";
+import {MssqlParameter} from "../driver/sqlserver/MssqlParameter.ts";
+import {MongoDriver} from "../driver/mongodb/MongoDriver.ts";
+import {MongoQueryRunner} from "../driver/mongodb/MongoQueryRunner.ts";
+import { TypeORMError } from "../error.ts";
 
 /**
  * Executes migrations: runs pending and reverts previously executed migrations.

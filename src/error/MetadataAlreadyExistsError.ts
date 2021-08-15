@@ -1,4 +1,4 @@
-import {TypeORMError} from "./TypeORMError";
+import {TypeORMError} from "./TypeORMError.ts";
 
 export class MetadataAlreadyExistsError extends TypeORMError {
     constructor(metadataType: string, constructor: Function, propertyName?: string) {

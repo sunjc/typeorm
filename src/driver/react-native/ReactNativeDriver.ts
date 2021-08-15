@@ -1,11 +1,11 @@
-import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
-import {ReactNativeConnectionOptions} from "./ReactNativeConnectionOptions";
-import {ReactNativeQueryRunner} from "./ReactNativeQueryRunner";
-import {QueryRunner} from "../../query-runner/QueryRunner";
-import {Connection} from "../../connection/Connection";
-import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError";
-import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
-import {ReplicationMode} from "../types/ReplicationMode";
+import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver.ts";
+import {ReactNativeConnectionOptions} from "./ReactNativeConnectionOptions.ts";
+import {ReactNativeQueryRunner} from "./ReactNativeQueryRunner.ts";
+import {QueryRunner} from "../../query-runner/QueryRunner.ts";
+import {Connection} from "../../connection/Connection.ts";
+import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError.ts";
+import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError.ts";
+import {ReplicationMode} from "../types/ReplicationMode.ts";
 
 export class ReactNativeDriver extends AbstractSqliteDriver {
     options: ReactNativeConnectionOptions;

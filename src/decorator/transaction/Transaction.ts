@@ -1,10 +1,10 @@
-import {getConnection, getMetadataArgsStorage} from "../../globals";
-import {TransactionOptions} from "../options/TransactionOptions";
-import {IsolationLevel} from "../../driver/types/IsolationLevel";
-import { EntityManager } from "../../entity-manager/EntityManager";
-import { Repository } from "../../repository/Repository";
-import { MongoRepository } from "../../repository/MongoRepository";
-import { TreeRepository } from "../../repository/TreeRepository";
+import {getConnection, getMetadataArgsStorage} from "../../globals.ts";
+import {TransactionOptions} from "../options/TransactionOptions.ts";
+import {IsolationLevel} from "../../driver/types/IsolationLevel.ts";
+import { EntityManager } from "../../entity-manager/EntityManager.ts";
+import { Repository } from "../../repository/Repository.ts";
+import { MongoRepository } from "../../repository/MongoRepository.ts";
+import { TreeRepository } from "../../repository/TreeRepository.ts";
 
 /**
  * Wraps some method into the transaction.

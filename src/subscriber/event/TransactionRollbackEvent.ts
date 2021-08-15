@@ -1,6 +1,6 @@
-import {EntityManager} from "../../entity-manager/EntityManager";
-import {Connection} from "../../connection/Connection";
-import {QueryRunner} from "../../query-runner/QueryRunner";
+import {EntityManager} from "../../entity-manager/EntityManager.ts";
+import {Connection} from "../../connection/Connection.ts";
+import {QueryRunner} from "../../query-runner/QueryRunner.ts";
 
 /**
  * TransactionRollbackEvent is an object that broadcaster sends to the entity subscriber on transaction rollback.

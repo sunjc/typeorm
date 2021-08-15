@@ -1,10 +1,10 @@
-import { CommandUtils } from "./CommandUtils";
-import { ObjectLiteral } from "../common/ObjectLiteral";
+import { CommandUtils } from "./CommandUtils.ts";
+import { ObjectLiteral } from "../common/ObjectLiteral.ts";
 import * as path from "path";
 import * as yargs from "yargs";
 import chalk from "chalk";
 import { exec } from "child_process";
-import { TypeORMError } from "../error/TypeORMError";
+import { TypeORMError } from "../error/TypeORMError.ts";
 
 /**
  * Generates a new project with TypeORM.
@@ -303,7 +303,7 @@ export const Routes = [{
     protected static getControllerTemplate(): string {
         return `import {getRepository} from "typeorm";
 import {NextFunction, Request, Response} from "express";
-import {User} from "../entity/User";
+import {User} from "../entity/User.ts";
 
 export class UserController {
 
@@ -339,8 +339,8 @@ import {createConnection} from "typeorm";
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import {Request, Response} from "express";
-import {Routes} from "./routes";
-import {User} from "./entity/User";
+import {Routes} from "./routes.ts";
+import {User} from "./entity/User.ts";
 
 createConnection().then(async connection => {
 
@@ -387,7 +387,7 @@ createConnection().then(async connection => {
         } else {
             return `import "reflect-metadata";
 import {createConnection} from "typeorm";
-import {User} from "./entity/User";
+import {User} from "./entity/User.ts";
 
 createConnection().then(async connection => {
 

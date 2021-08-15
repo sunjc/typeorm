@@ -1,7 +1,7 @@
 import debug from "debug";
-import {Logger} from "./Logger";
-import {QueryRunner} from "../query-runner/QueryRunner";
-import {PlatformTools} from "../platform/PlatformTools";
+import {Logger} from "./Logger.ts";
+import {QueryRunner} from "../query-runner/QueryRunner.ts";
+import {PlatformTools} from "../platform/PlatformTools.ts";
 
 /**
  * Performs logging of the events in TypeORM via debug library.

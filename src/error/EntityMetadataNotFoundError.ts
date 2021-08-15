@@ -1,6 +1,6 @@
-import {EntityTarget} from "../common/EntityTarget";
-import {EntitySchema} from "../entity-schema/EntitySchema";
-import {TypeORMError} from "./TypeORMError";
+import {EntityTarget} from "../common/EntityTarget.ts";
+import {EntitySchema} from "../entity-schema/EntitySchema.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 export class EntityMetadataNotFoundError extends TypeORMError {
     constructor(target: EntityTarget<any>) {

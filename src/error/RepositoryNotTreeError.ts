@@ -1,6 +1,6 @@
-import {EntityTarget} from "../common/EntityTarget";
-import {EntitySchema} from "../entity-schema/EntitySchema";
-import {TypeORMError} from "./TypeORMError";
+import {EntityTarget} from "../common/EntityTarget.ts";
+import {EntitySchema} from "../entity-schema/EntitySchema.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when repository for the given class is not found.

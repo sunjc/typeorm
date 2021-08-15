@@ -1,6 +1,6 @@
-import {getMetadataArgsStorage} from "../../globals";
-import {InheritanceMetadataArgs} from "../../metadata-args/InheritanceMetadataArgs";
-import {ColumnOptions} from "../options/ColumnOptions";
+import {getMetadataArgsStorage} from "../../globals.ts";
+import {InheritanceMetadataArgs} from "../../metadata-args/InheritanceMetadataArgs.ts";
+import {ColumnOptions} from "../options/ColumnOptions.ts";
 
 /**
  * Sets for entity to use table inheritance pattern.

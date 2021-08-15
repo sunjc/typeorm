@@ -1,12 +1,12 @@
-import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
-import {NativescriptConnectionOptions} from "./NativescriptConnectionOptions";
-import {NativescriptQueryRunner} from "./NativescriptQueryRunner";
-import {QueryRunner} from "../../query-runner/QueryRunner";
-import {Connection} from "../../connection/Connection";
-import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError";
-import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
-import {ColumnType} from "../types/ColumnTypes";
-import {ReplicationMode} from "../types/ReplicationMode";
+import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver.ts";
+import {NativescriptConnectionOptions} from "./NativescriptConnectionOptions.ts";
+import {NativescriptQueryRunner} from "./NativescriptQueryRunner.ts";
+import {QueryRunner} from "../../query-runner/QueryRunner.ts";
+import {Connection} from "../../connection/Connection.ts";
+import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError.ts";
+import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError.ts";
+import {ColumnType} from "../types/ColumnTypes.ts";
+import {ReplicationMode} from "../types/ReplicationMode.ts";
 
 /**
  * Organizes communication with sqlite DBMS within Nativescript.

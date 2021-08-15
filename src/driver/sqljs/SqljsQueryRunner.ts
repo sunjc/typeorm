@@ -1,9 +1,9 @@
-import {QueryRunnerAlreadyReleasedError} from "../../error/QueryRunnerAlreadyReleasedError";
-import {AbstractSqliteQueryRunner} from "../sqlite-abstract/AbstractSqliteQueryRunner";
-import {SqljsDriver} from "./SqljsDriver";
-import {Broadcaster} from "../../subscriber/Broadcaster";
-import {QueryFailedError} from "../../error/QueryFailedError";
-import { QueryResult } from "../../query-runner/QueryResult";
+import {QueryRunnerAlreadyReleasedError} from "../../error/QueryRunnerAlreadyReleasedError.ts";
+import {AbstractSqliteQueryRunner} from "../sqlite-abstract/AbstractSqliteQueryRunner.ts";
+import {SqljsDriver} from "./SqljsDriver.ts";
+import {Broadcaster} from "../../subscriber/Broadcaster.ts";
+import {QueryFailedError} from "../../error/QueryFailedError.ts";
+import { QueryResult } from "../../query-runner/QueryResult.ts";
 
 /**
  * Runs queries on a single sqlite database connection.

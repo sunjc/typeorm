@@ -8,21 +8,21 @@ import {
     TableForeignKey,
     TypeORMError,
 } from "../..";
-import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
-import {ColumnMetadata} from "../../metadata/ColumnMetadata";
-import {PlatformTools} from "../../platform/PlatformTools";
-import {RdbmsSchemaBuilder} from "../../schema-builder/RdbmsSchemaBuilder";
-import {ApplyValueTransformers} from "../../util/ApplyValueTransformers";
-import {DateUtils} from "../../util/DateUtils";
-import {OrmUtils} from "../../util/OrmUtils";
-import {Driver} from "../Driver";
-import {DataTypeDefaults} from "../types/DataTypeDefaults";
-import {MappedColumnTypes} from "../types/MappedColumnTypes";
-import {SapConnectionOptions} from "./SapConnectionOptions";
-import {SapQueryRunner} from "./SapQueryRunner";
-import {ReplicationMode} from "../types/ReplicationMode";
-import {DriverUtils} from "../DriverUtils";
-import { View } from "../../schema-builder/view/View";
+import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError.ts";
+import {ColumnMetadata} from "../../metadata/ColumnMetadata.ts";
+import {PlatformTools} from "../../platform/PlatformTools.ts";
+import {RdbmsSchemaBuilder} from "../../schema-builder/RdbmsSchemaBuilder.ts";
+import {ApplyValueTransformers} from "../../util/ApplyValueTransformers.ts";
+import {DateUtils} from "../../util/DateUtils.ts";
+import {OrmUtils} from "../../util/OrmUtils.ts";
+import {Driver} from "../Driver.ts";
+import {DataTypeDefaults} from "../types/DataTypeDefaults.ts";
+import {MappedColumnTypes} from "../types/MappedColumnTypes.ts";
+import {SapConnectionOptions} from "./SapConnectionOptions.ts";
+import {SapQueryRunner} from "./SapQueryRunner.ts";
+import {ReplicationMode} from "../types/ReplicationMode.ts";
+import {DriverUtils} from "../DriverUtils.ts";
+import { View } from "../../schema-builder/view/View.ts";
 
 /**
  * Organizes communication with SAP Hana DBMS.

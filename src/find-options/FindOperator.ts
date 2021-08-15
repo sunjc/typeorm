@@ -1,5 +1,5 @@
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {FindOperatorType} from "./FindOperatorType";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {FindOperatorType} from "./FindOperatorType.ts";
 
 type SqlGeneratorType = (aliasPath: string) => string;
 
@@ -58,7 +58,7 @@ export class FindOperator<T> {
         this._value = value;
         this._useParameter = useParameter;
         this._multipleParameters = multipleParameters;
-        this._getSql = getSql; 
+        this._getSql = getSql;
         this._objectLiteralParameters = objectLiteralParameters;
     }
 

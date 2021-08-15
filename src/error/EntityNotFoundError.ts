@@ -1,6 +1,6 @@
-import {EntityTarget} from "../common/EntityTarget";
-import {EntitySchema} from "../entity-schema/EntitySchema";
-import {TypeORMError} from "./TypeORMError";
+import {EntityTarget} from "../common/EntityTarget.ts";
+import {EntitySchema} from "../entity-schema/EntitySchema.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when no result could be found in methods which are not allowed to return undefined or an empty set.

@@ -1,6 +1,6 @@
-import { getMetadataArgsStorage } from "../../globals";
-import { ColumnMetadataArgs } from "../../metadata-args/ColumnMetadataArgs";
-import { ColumnOptions } from "../options/ColumnOptions";
+import { getMetadataArgsStorage } from "../../globals.ts";
+import { ColumnMetadataArgs } from "../../metadata-args/ColumnMetadataArgs.ts";
+import { ColumnOptions } from "../options/ColumnOptions.ts";
 
 /**
  * This column will store a delete date of the soft-deleted object.

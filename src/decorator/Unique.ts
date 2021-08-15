@@ -1,5 +1,5 @@
-import { getMetadataArgsStorage } from "../globals";
-import { UniqueMetadataArgs } from "../metadata-args/UniqueMetadataArgs";
+import { getMetadataArgsStorage } from "../globals.ts";
+import { UniqueMetadataArgs } from "../metadata-args/UniqueMetadataArgs.ts";
 
 /**
  * Composite unique constraint must be set on entity classes and must specify entity's fields to be unique.

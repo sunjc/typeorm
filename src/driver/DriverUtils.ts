@@ -1,5 +1,5 @@
-import {Driver} from "./Driver";
-import {hash,shorten} from "../util/StringUtils";
+import {Driver} from "./Driver.ts";
+import {hash,shorten} from "../util/StringUtils.ts";
 
 /**
  * Common driver utility functions.

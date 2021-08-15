@@ -1,12 +1,12 @@
-import {QueryRunnerAlreadyReleasedError} from "../../error/QueryRunnerAlreadyReleasedError";
-import {QueryFailedError} from "../../error/QueryFailedError";
-import {AbstractSqliteQueryRunner} from "../sqlite-abstract/AbstractSqliteQueryRunner";
-import {TransactionAlreadyStartedError} from "../../error/TransactionAlreadyStartedError";
-import {TransactionNotStartedError} from "../../error/TransactionNotStartedError";
-import {ExpoDriver} from "./ExpoDriver";
-import {Broadcaster} from "../../subscriber/Broadcaster";
-import {BroadcasterResult} from "../../subscriber/BroadcasterResult";
-import { QueryResult } from "../../query-runner/QueryResult";
+import {QueryRunnerAlreadyReleasedError} from "../../error/QueryRunnerAlreadyReleasedError.ts";
+import {QueryFailedError} from "../../error/QueryFailedError.ts";
+import {AbstractSqliteQueryRunner} from "../sqlite-abstract/AbstractSqliteQueryRunner.ts";
+import {TransactionAlreadyStartedError} from "../../error/TransactionAlreadyStartedError.ts";
+import {TransactionNotStartedError} from "../../error/TransactionNotStartedError.ts";
+import {ExpoDriver} from "./ExpoDriver.ts";
+import {Broadcaster} from "../../subscriber/Broadcaster.ts";
+import {BroadcasterResult} from "../../subscriber/BroadcasterResult.ts";
+import { QueryResult } from "../../query-runner/QueryResult.ts";
 
 // Needed to satisfy the Typescript compiler
 interface IResultSet {

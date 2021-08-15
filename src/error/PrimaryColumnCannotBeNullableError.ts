@@ -1,4 +1,4 @@
-import {TypeORMError} from "./TypeORMError";
+import {TypeORMError} from "./TypeORMError.ts";
 
 export class PrimaryColumnCannotBeNullableError extends TypeORMError {
     constructor(object: Object, propertyName: string) {

@@ -1,5 +1,5 @@
-import {ObjectUtils} from "../util/ObjectUtils";
-import {TypeORMError} from "./TypeORMError";
+import {ObjectUtils} from "../util/ObjectUtils.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when query execution has failed.

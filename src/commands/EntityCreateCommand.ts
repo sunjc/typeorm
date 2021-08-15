@@ -1,5 +1,5 @@
-import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader";
-import {CommandUtils} from "./CommandUtils";
+import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader.ts";
+import {CommandUtils} from "./CommandUtils.ts";
 import * as yargs from "yargs";
 import chalk from "chalk";
 

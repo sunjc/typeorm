@@ -1,5 +1,5 @@
-import * as yargs from "yargs";
-import {exec} from "child_process";
+import * as yargs from "yargs.ts";
+import {exec} from "child_process.ts";
 
 /**
  * Shows typeorm version.

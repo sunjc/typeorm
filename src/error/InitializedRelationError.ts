@@ -1,5 +1,5 @@
-import {RelationMetadata} from "../metadata/RelationMetadata";
-import {TypeORMError} from "./TypeORMError";
+import {RelationMetadata} from "../metadata/RelationMetadata.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when relation has array initialized which is forbidden my ORM.

@@ -1,4 +1,4 @@
-import {EventEmitter, Readable, Writable} from "../../platform/PlatformTools";
+import {EventEmitter, Readable, Writable} from "../../platform/PlatformTools.ts";
 
 /**
  * Creates a new MongoClient instance.

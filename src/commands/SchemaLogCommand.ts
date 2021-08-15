@@ -1,6 +1,6 @@
-import {createConnection} from "../globals";
-import {Connection} from "../connection/Connection";
-import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader";
+import {createConnection} from "../globals.ts";
+import {Connection} from "../connection/Connection.ts";
+import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader.ts";
 import {highlight} from "cli-highlight";
 import * as yargs from "yargs";
 import chalk from "chalk";

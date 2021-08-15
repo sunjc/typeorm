@@ -1,7 +1,7 @@
-import {getMetadataArgsStorage} from "../../globals";
-import {TreeMetadataArgs} from "../../metadata-args/TreeMetadataArgs";
-import {TreeType} from "../../metadata/types/TreeTypes";
-import {ClosureTreeOptions} from "../../metadata/types/ClosureTreeOptions";
+import {getMetadataArgsStorage} from "../../globals.ts";
+import {TreeMetadataArgs} from "../../metadata-args/TreeMetadataArgs.ts";
+import {TreeType} from "../../metadata/types/TreeTypes.ts";
+import {ClosureTreeOptions} from "../../metadata/types/ClosureTreeOptions.ts";
 
 /**
  * Marks entity to work like a tree.

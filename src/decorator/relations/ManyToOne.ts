@@ -1,7 +1,7 @@
-import {getMetadataArgsStorage} from "../../globals";
-import {RelationMetadataArgs} from "../../metadata-args/RelationMetadataArgs";
-import { ObjectType } from "../../common/ObjectType";
-import { RelationOptions } from "../options/RelationOptions";
+import {getMetadataArgsStorage} from "../../globals.ts";
+import {RelationMetadataArgs} from "../../metadata-args/RelationMetadataArgs.ts";
+import { ObjectType } from "../../common/ObjectType.ts";
+import { RelationOptions } from "../options/RelationOptions.ts";
 
 /**
  * A many-to-one relation allows creating the type of relation where Entity1 can have a single instance of Entity2, but

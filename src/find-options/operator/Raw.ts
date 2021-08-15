@@ -1,5 +1,5 @@
-import {FindOperator} from "../FindOperator";
-import {ObjectLiteral} from "../../common/ObjectLiteral";
+import {FindOperator} from "../FindOperator.ts";
+import {ObjectLiteral} from "../../common/ObjectLiteral.ts";
 
 /**
  * Find Options Operator.

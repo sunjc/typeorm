@@ -1,4 +1,4 @@
-import {OrderByCondition} from "../../find-options/OrderByCondition";
+import {OrderByCondition} from "../../find-options/OrderByCondition.ts";
 
 /**
  * Describes all entity's options.
@@ -43,8 +43,8 @@ export interface EntityOptions {
 
     /**
      * If set to 'true' this option disables Sqlite's default behaviour of secretly creating
-     * an integer primary key column named 'rowid' on table creation. 
-     * @see https://www.sqlite.org/withoutrowid.html. 
+     * an integer primary key column named 'rowid' on table creation.
+     * @see https://www.sqlite.org/withoutrowid.html.
      */
     withoutRowid?: boolean;
 }

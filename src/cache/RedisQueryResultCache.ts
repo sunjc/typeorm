@@ -1,9 +1,9 @@
-import {QueryResultCache} from "./QueryResultCache";
-import {QueryResultCacheOptions} from "./QueryResultCacheOptions";
-import {PlatformTools} from "../platform/PlatformTools";
-import {Connection} from "../connection/Connection";
-import {QueryRunner} from "../query-runner/QueryRunner";
-import { TypeORMError } from "../error/TypeORMError";
+import {QueryResultCache} from "./QueryResultCache.ts";
+import {QueryResultCacheOptions} from "./QueryResultCacheOptions.ts";
+import {PlatformTools} from "../platform/PlatformTools.ts";
+import {Connection} from "../connection/Connection.ts";
+import {QueryRunner} from "../query-runner/QueryRunner.ts";
+import { TypeORMError } from "../error/TypeORMError.ts";
 
 /**
  * Caches query result into Redis database.

@@ -1,8 +1,8 @@
-import {getMetadataArgsStorage} from "../../globals";
-import {PrimaryGeneratedColumnNumericOptions} from "../options/PrimaryGeneratedColumnNumericOptions";
-import {PrimaryGeneratedColumnUUIDOptions} from "../options/PrimaryGeneratedColumnUUIDOptions";
-import {GeneratedMetadataArgs} from "../../metadata-args/GeneratedMetadataArgs";
-import { ColumnOptions } from "../options/ColumnOptions";
+import {getMetadataArgsStorage} from "../../globals.ts";
+import {PrimaryGeneratedColumnNumericOptions} from "../options/PrimaryGeneratedColumnNumericOptions.ts";
+import {PrimaryGeneratedColumnUUIDOptions} from "../options/PrimaryGeneratedColumnUUIDOptions.ts";
+import {GeneratedMetadataArgs} from "../../metadata-args/GeneratedMetadataArgs.ts";
+import { ColumnOptions } from "../options/ColumnOptions.ts";
 
 /**
  * Column decorator is used to mark a specific class property as a table column.

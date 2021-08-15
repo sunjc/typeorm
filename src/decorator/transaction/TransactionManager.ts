@@ -1,5 +1,5 @@
-import {getMetadataArgsStorage} from "../../globals";
-import {TransactionEntityMetadataArgs} from "../../metadata-args/TransactionEntityMetadataArgs";
+import {getMetadataArgsStorage} from "../../globals.ts";
+import {TransactionEntityMetadataArgs} from "../../metadata-args/TransactionEntityMetadataArgs.ts";
 
 /**
  * Injects transaction's entity manager into the method wrapped with @Transaction decorator.

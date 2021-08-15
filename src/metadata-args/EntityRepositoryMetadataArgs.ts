@@ -1,4 +1,4 @@
-import { EntityTarget } from "../common/EntityTarget";
+import { EntityTarget } from "../common/EntityTarget.ts";
 
 /**
  * Arguments for EntityRepositoryMetadata class, helps to construct an EntityRepositoryMetadata object.

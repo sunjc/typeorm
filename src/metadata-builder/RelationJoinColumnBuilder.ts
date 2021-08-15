@@ -1,13 +1,13 @@
-import {MysqlDriver} from "../driver/mysql/MysqlDriver";
-import {ColumnMetadata} from "../metadata/ColumnMetadata";
-import {UniqueMetadata} from "../metadata/UniqueMetadata";
-import {ForeignKeyMetadata} from "../metadata/ForeignKeyMetadata";
-import {RelationMetadata} from "../metadata/RelationMetadata";
-import {JoinColumnMetadataArgs} from "../metadata-args/JoinColumnMetadataArgs";
-import {Connection} from "../connection/Connection";
-import {OracleDriver} from "../driver/oracle/OracleDriver";
-import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver";
-import { TypeORMError } from "../error";
+import {MysqlDriver} from "../driver/mysql/MysqlDriver.ts";
+import {ColumnMetadata} from "../metadata/ColumnMetadata.ts";
+import {UniqueMetadata} from "../metadata/UniqueMetadata.ts";
+import {ForeignKeyMetadata} from "../metadata/ForeignKeyMetadata.ts";
+import {RelationMetadata} from "../metadata/RelationMetadata.ts";
+import {JoinColumnMetadataArgs} from "../metadata-args/JoinColumnMetadataArgs.ts";
+import {Connection} from "../connection/Connection.ts";
+import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
+import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver.ts";
+import { TypeORMError } from "../error.ts";
 
 /**
  * Builds join column for the many-to-one and one-to-one owner relations.

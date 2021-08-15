@@ -1,4 +1,4 @@
-import {ObjectType} from "./ObjectType";
+import {ObjectType} from "./ObjectType.ts";
 import {EntitySchema} from "..";
 
 /**

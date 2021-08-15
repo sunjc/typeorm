@@ -1,16 +1,16 @@
-import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver";
-import {SqljsConnectionOptions} from "./SqljsConnectionOptions";
-import {SqljsQueryRunner} from "./SqljsQueryRunner";
-import {QueryRunner} from "../../query-runner/QueryRunner";
-import {Connection} from "../../connection/Connection";
-import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError";
-import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError";
-import {PlatformTools} from "../../platform/PlatformTools";
-import {EntityMetadata} from "../../metadata/EntityMetadata";
-import {OrmUtils} from "../../util/OrmUtils";
-import {ObjectLiteral} from "../../common/ObjectLiteral";
-import {ReplicationMode} from "../types/ReplicationMode";
-import { TypeORMError } from "../../error";
+import {AbstractSqliteDriver} from "../sqlite-abstract/AbstractSqliteDriver.ts";
+import {SqljsConnectionOptions} from "./SqljsConnectionOptions.ts";
+import {SqljsQueryRunner} from "./SqljsQueryRunner.ts";
+import {QueryRunner} from "../../query-runner/QueryRunner.ts";
+import {Connection} from "../../connection/Connection.ts";
+import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError.ts";
+import {DriverOptionNotSetError} from "../../error/DriverOptionNotSetError.ts";
+import {PlatformTools} from "../../platform/PlatformTools.ts";
+import {EntityMetadata} from "../../metadata/EntityMetadata.ts";
+import {OrmUtils} from "../../util/OrmUtils.ts";
+import {ObjectLiteral} from "../../common/ObjectLiteral.ts";
+import {ReplicationMode} from "../types/ReplicationMode.ts";
+import { TypeORMError } from "../../error.ts";
 
 // This is needed to satisfy the typescript compiler.
 interface Window {

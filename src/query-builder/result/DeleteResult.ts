@@ -1,4 +1,4 @@
-import {QueryResult} from "../../query-runner/QueryResult";
+import {QueryResult} from "../../query-runner/QueryResult.ts";
 
 /**
  * Result object returned by DeleteQueryBuilder execution.

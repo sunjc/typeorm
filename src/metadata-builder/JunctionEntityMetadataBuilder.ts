@@ -1,14 +1,14 @@
-import {MysqlDriver} from "../driver/mysql/MysqlDriver";
-import {ColumnMetadata} from "../metadata/ColumnMetadata";
-import {Connection} from "../connection/Connection";
-import {EntityMetadata} from "../metadata/EntityMetadata";
-import {ForeignKeyMetadata} from "../metadata/ForeignKeyMetadata";
-import {IndexMetadata} from "../metadata/IndexMetadata";
-import {JoinTableMetadataArgs} from "../metadata-args/JoinTableMetadataArgs";
-import {RelationMetadata} from "../metadata/RelationMetadata";
-import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver";
-import {OracleDriver} from "../driver/oracle/OracleDriver";
-import { TypeORMError } from "../error";
+import {MysqlDriver} from "../driver/mysql/MysqlDriver.ts";
+import {ColumnMetadata} from "../metadata/ColumnMetadata.ts";
+import {Connection} from "../connection/Connection.ts";
+import {EntityMetadata} from "../metadata/EntityMetadata.ts";
+import {ForeignKeyMetadata} from "../metadata/ForeignKeyMetadata.ts";
+import {IndexMetadata} from "../metadata/IndexMetadata.ts";
+import {JoinTableMetadataArgs} from "../metadata-args/JoinTableMetadataArgs.ts";
+import {RelationMetadata} from "../metadata/RelationMetadata.ts";
+import {AuroraDataApiDriver} from "../driver/aurora-data-api/AuroraDataApiDriver.ts";
+import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
+import { TypeORMError } from "../error.ts";
 
 /**
  * Creates EntityMetadata for junction tables.

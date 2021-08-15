@@ -1,15 +1,15 @@
-import {ColumnMetadata} from "./ColumnMetadata";
-import {RelationMetadata} from "./RelationMetadata";
-import {EntityMetadata} from "./EntityMetadata";
-import {EmbeddedMetadataArgs} from "../metadata-args/EmbeddedMetadataArgs";
-import {RelationIdMetadata} from "./RelationIdMetadata";
-import {RelationCountMetadata} from "./RelationCountMetadata";
-import {Connection} from "../connection/Connection";
-import {MongoDriver} from "../driver/mongodb/MongoDriver";
-import {EntityListenerMetadata} from "./EntityListenerMetadata";
-import {IndexMetadata} from "./IndexMetadata";
-import {UniqueMetadata} from "./UniqueMetadata";
-import { TypeORMError } from "../error";
+import {ColumnMetadata} from "./ColumnMetadata.ts";
+import {RelationMetadata} from "./RelationMetadata.ts";
+import {EntityMetadata} from "./EntityMetadata.ts";
+import {EmbeddedMetadataArgs} from "../metadata-args/EmbeddedMetadataArgs.ts";
+import {RelationIdMetadata} from "./RelationIdMetadata.ts";
+import {RelationCountMetadata} from "./RelationCountMetadata.ts";
+import {Connection} from "../connection/Connection.ts";
+import {MongoDriver} from "../driver/mongodb/MongoDriver.ts";
+import {EntityListenerMetadata} from "./EntityListenerMetadata.ts";
+import {IndexMetadata} from "./IndexMetadata.ts";
+import {UniqueMetadata} from "./UniqueMetadata.ts";
+import { TypeORMError } from "../error.ts";
 
 /**
  * Contains all information about entity's embedded property.

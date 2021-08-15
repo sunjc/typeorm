@@ -1,8 +1,8 @@
-import {createConnection} from "../globals";
-import {QueryRunner} from "../query-runner/QueryRunner";
-import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader";
-import {Connection} from "../connection/Connection";
-import {PlatformTools} from "../platform/PlatformTools";
+import {createConnection} from "../globals.ts";
+import {QueryRunner} from "../query-runner/QueryRunner.ts";
+import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader.ts";
+import {Connection} from "../connection/Connection.ts";
+import {PlatformTools} from "../platform/PlatformTools.ts";
 import * as yargs from "yargs";
 import chalk from "chalk";
 

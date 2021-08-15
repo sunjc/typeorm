@@ -1,10 +1,10 @@
-import {getMetadataArgsStorage} from "../../globals";
-import {ColumnTypeUndefinedError} from "../../error/ColumnTypeUndefinedError";
-import {PrimaryColumnCannotBeNullableError} from "../../error/PrimaryColumnCannotBeNullableError";
-import {ColumnMetadataArgs} from "../../metadata-args/ColumnMetadataArgs";
-import {GeneratedMetadataArgs} from "../../metadata-args/GeneratedMetadataArgs";
-import { ColumnOptions } from "../options/ColumnOptions";
-import { ColumnType } from "../../driver/types/ColumnTypes";
+import {getMetadataArgsStorage} from "../../globals.ts";
+import {ColumnTypeUndefinedError} from "../../error/ColumnTypeUndefinedError.ts";
+import {PrimaryColumnCannotBeNullableError} from "../../error/PrimaryColumnCannotBeNullableError.ts";
+import {ColumnMetadataArgs} from "../../metadata-args/ColumnMetadataArgs.ts";
+import {GeneratedMetadataArgs} from "../../metadata-args/GeneratedMetadataArgs.ts";
+import { ColumnOptions } from "../options/ColumnOptions.ts";
+import { ColumnType } from "../../driver/types/ColumnTypes.ts";
 
 /**
  * Describes all primary key column's options.

@@ -1,6 +1,6 @@
-import {TableColumnOptions} from "../options/TableColumnOptions";
-import {ColumnMetadata} from "../../metadata/ColumnMetadata";
-import {Driver} from "../../driver/Driver";
+import {TableColumnOptions} from "../options/TableColumnOptions.ts";
+import {ColumnMetadata} from "../../metadata/ColumnMetadata.ts";
+import {Driver} from "../../driver/Driver.ts";
 
 export class TableUtils {
 

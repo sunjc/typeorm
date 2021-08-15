@@ -1,8 +1,8 @@
-import {RedisQueryResultCache} from "./RedisQueryResultCache";
-import {DbQueryResultCache} from "./DbQueryResultCache";
-import {QueryResultCache} from "./QueryResultCache";
-import {Connection} from "../connection/Connection";
-import { TypeORMError } from "../error/TypeORMError";
+import {RedisQueryResultCache} from "./RedisQueryResultCache.ts";
+import {DbQueryResultCache} from "./DbQueryResultCache.ts";
+import {QueryResultCache} from "./QueryResultCache.ts";
+import {Connection} from "../connection/Connection.ts";
+import { TypeORMError } from "../error/TypeORMError.ts";
 
 /**
  * Caches query result into Redis database.

@@ -1,9 +1,9 @@
-import {EmbeddedMetadata} from "./EmbeddedMetadata";
-import {EntityMetadata} from "./EntityMetadata";
-import {NamingStrategyInterface} from "../naming-strategy/NamingStrategyInterface";
-import {ColumnMetadata} from "./ColumnMetadata";
-import {UniqueMetadataArgs} from "../metadata-args/UniqueMetadataArgs";
-import { TypeORMError } from "../error";
+import {EmbeddedMetadata} from "./EmbeddedMetadata.ts";
+import {EntityMetadata} from "./EntityMetadata.ts";
+import {NamingStrategyInterface} from "../naming-strategy/NamingStrategyInterface.ts";
+import {ColumnMetadata} from "./ColumnMetadata.ts";
+import {UniqueMetadataArgs} from "../metadata-args/UniqueMetadataArgs.ts";
+import { TypeORMError } from "../error.ts";
 
 /**
  * Unique metadata contains all information about table's unique constraints.

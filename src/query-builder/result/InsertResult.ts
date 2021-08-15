@@ -1,5 +1,5 @@
-import {ObjectLiteral} from "../../common/ObjectLiteral";
-import {QueryResult} from "../../query-runner/QueryResult";
+import {ObjectLiteral} from "../../common/ObjectLiteral.ts";
+import {QueryResult} from "../../query-runner/QueryResult.ts";
 
 /**
  * Result object returned by InsertQueryBuilder execution.

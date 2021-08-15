@@ -1,7 +1,7 @@
-import {ColumnType} from "../driver/types/ColumnTypes";
-import {DatabaseType} from "../driver/types/DatabaseType";
-import {ColumnMetadata} from "../metadata/ColumnMetadata";
-import {TypeORMError} from "./TypeORMError";
+import {ColumnType} from "../driver/types/ColumnTypes.ts";
+import {DatabaseType} from "../driver/types/DatabaseType.ts";
+import {ColumnMetadata} from "../metadata/ColumnMetadata.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 export class DataTypeNotSupportedError extends TypeORMError {
     constructor(column: ColumnMetadata, dataType: ColumnType, database?: DatabaseType) {

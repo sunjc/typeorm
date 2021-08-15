@@ -1,17 +1,17 @@
-import {Alias} from "./Alias";
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {OrderByCondition} from "../find-options/OrderByCondition";
-import {JoinAttribute} from "./JoinAttribute";
-import {RelationIdAttribute} from "./relation-id/RelationIdAttribute";
-import {RelationCountAttribute} from "./relation-count/RelationCountAttribute";
-import {Connection} from "../connection/Connection";
-import {EntityMetadata} from "../metadata/EntityMetadata";
-import {SelectQuery} from "./SelectQuery";
-import {ColumnMetadata} from "../metadata/ColumnMetadata";
-import {RelationMetadata} from "../metadata/RelationMetadata";
-import {SelectQueryBuilderOption} from "./SelectQueryBuilderOption";
-import { TypeORMError } from "../error";
-import { WhereClause } from "./WhereClause";
+import {Alias} from "./Alias.ts";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {OrderByCondition} from "../find-options/OrderByCondition.ts";
+import {JoinAttribute} from "./JoinAttribute.ts";
+import {RelationIdAttribute} from "./relation-id/RelationIdAttribute.ts";
+import {RelationCountAttribute} from "./relation-count/RelationCountAttribute.ts";
+import {Connection} from "../connection/Connection.ts";
+import {EntityMetadata} from "../metadata/EntityMetadata.ts";
+import {SelectQuery} from "./SelectQuery.ts";
+import {ColumnMetadata} from "../metadata/ColumnMetadata.ts";
+import {RelationMetadata} from "../metadata/RelationMetadata.ts";
+import {SelectQueryBuilderOption} from "./SelectQueryBuilderOption.ts";
+import { TypeORMError } from "../error.ts";
+import { WhereClause } from "./WhereClause.ts";
 
 /**
  * Contains all properties of the QueryBuilder that needs to be build a final query.

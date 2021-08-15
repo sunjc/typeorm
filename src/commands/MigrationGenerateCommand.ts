@@ -1,7 +1,7 @@
-import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader";
-import {CommandUtils} from "./CommandUtils";
-import {createConnection} from "../globals";
-import {camelCase} from "../util/StringUtils";
+import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader.ts";
+import {CommandUtils} from "./CommandUtils.ts";
+import {createConnection} from "../globals.ts";
+import {camelCase} from "../util/StringUtils.ts";
 import * as yargs from "yargs";
 import chalk from "chalk";
 import { format } from "@sqltools/formatter/lib/sqlFormatter";

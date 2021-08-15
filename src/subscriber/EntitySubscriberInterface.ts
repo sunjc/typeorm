@@ -1,10 +1,10 @@
-import { TransactionCommitEvent } from "./event/TransactionCommitEvent";
-import { TransactionRollbackEvent } from "./event/TransactionRollbackEvent";
-import { TransactionStartEvent } from "./event/TransactionStartEvent";
-import {UpdateEvent} from "./event/UpdateEvent";
-import {RemoveEvent} from "./event/RemoveEvent";
-import {InsertEvent} from "./event/InsertEvent";
-import {LoadEvent} from "./event/LoadEvent";
+import { TransactionCommitEvent } from "./event/TransactionCommitEvent.ts";
+import { TransactionRollbackEvent } from "./event/TransactionRollbackEvent.ts";
+import { TransactionStartEvent } from "./event/TransactionStartEvent.ts";
+import {UpdateEvent} from "./event/UpdateEvent.ts";
+import {RemoveEvent} from "./event/RemoveEvent.ts";
+import {InsertEvent} from "./event/InsertEvent.ts";
+import {LoadEvent} from "./event/LoadEvent.ts";
 
 /**
  * Classes that implement this interface are subscribers that subscribe for the specific events in the ORM.

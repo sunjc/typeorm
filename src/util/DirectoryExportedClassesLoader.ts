@@ -1,7 +1,7 @@
 import glob from "glob";
-import {PlatformTools} from "../platform/PlatformTools";
-import {EntitySchema} from "../entity-schema/EntitySchema";
-import {Logger} from "../logger/Logger";
+import {PlatformTools} from "../platform/PlatformTools.ts";
+import {EntitySchema} from "../entity-schema/EntitySchema.ts";
+import {Logger} from "../logger/Logger.ts";
 /**
  * Loads all exported classes from the given directory.
  */

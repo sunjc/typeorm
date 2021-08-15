@@ -1,6 +1,6 @@
-import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader";
-import {CommandUtils} from "./CommandUtils";
-import {camelCase} from "../util/StringUtils";
+import {ConnectionOptionsReader} from "../connection/ConnectionOptionsReader.ts";
+import {CommandUtils} from "./CommandUtils.ts";
+import {camelCase} from "../util/StringUtils.ts";
 import * as yargs from "yargs";
 import chalk from "chalk";
 

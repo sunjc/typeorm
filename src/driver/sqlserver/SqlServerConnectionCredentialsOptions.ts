@@ -1,10 +1,10 @@
-import {DefaultAuthentication} from "./authentication/DefaultAuthentication";
-import {AzureActiveDirectoryAccessTokenAuthentication} from "./authentication/AzureActiveDirectoryAccessTokenAuthentication";
-import {AzureActiveDirectoryMsiAppServiceAuthentication} from "./authentication/AzureActiveDirectoryMsiAppServiceAuthentication";
-import {AzureActiveDirectoryMsiVmAuthentication} from "./authentication/AzureActiveDirectoryMsiVmAuthentication";
-import {AzureActiveDirectoryPasswordAuthentication} from "./authentication/AzureActiveDirectoryPasswordAuthentication";
-import {AzureActiveDirectoryServicePrincipalSecret} from "./authentication/AzureActiveDirectoryServicePrincipalSecret";
-import {NtlmAuthentication} from "./authentication/NtlmAuthentication";
+import {DefaultAuthentication} from "./authentication/DefaultAuthentication.ts";
+import {AzureActiveDirectoryAccessTokenAuthentication} from "./authentication/AzureActiveDirectoryAccessTokenAuthentication.ts";
+import {AzureActiveDirectoryMsiAppServiceAuthentication} from "./authentication/AzureActiveDirectoryMsiAppServiceAuthentication.ts";
+import {AzureActiveDirectoryMsiVmAuthentication} from "./authentication/AzureActiveDirectoryMsiVmAuthentication.ts";
+import {AzureActiveDirectoryPasswordAuthentication} from "./authentication/AzureActiveDirectoryPasswordAuthentication.ts";
+import {AzureActiveDirectoryServicePrincipalSecret} from "./authentication/AzureActiveDirectoryServicePrincipalSecret.ts";
+import {NtlmAuthentication} from "./authentication/NtlmAuthentication.ts";
 
 export type SqlServerConnectionCredentialsAuthenticationOptions =
     DefaultAuthentication

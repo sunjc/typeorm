@@ -1,11 +1,11 @@
-import {Repository} from "./Repository";
-import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder";
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {AbstractSqliteDriver} from "../driver/sqlite-abstract/AbstractSqliteDriver";
-import { TypeORMError } from "../error/TypeORMError";
-import { FindTreeOptions } from "../find-options/FindTreeOptions";
-import { FindRelationsNotFoundError } from "../error";
-import { FindOptionsUtils } from "../find-options/FindOptionsUtils";
+import {Repository} from "./Repository.ts";
+import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder.ts";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {AbstractSqliteDriver} from "../driver/sqlite-abstract/AbstractSqliteDriver.ts";
+import { TypeORMError } from "../error/TypeORMError.ts";
+import { FindTreeOptions } from "../find-options/FindTreeOptions.ts";
+import { FindRelationsNotFoundError } from "../error.ts";
+import { FindOptionsUtils } from "../find-options/FindOptionsUtils.ts";
 
 /**
  * Repository with additional functions to work with trees.

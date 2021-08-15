@@ -1,9 +1,9 @@
-import {Subject} from "../Subject";
-import {QueryRunner} from "../../query-runner/QueryRunner";
-import {OrmUtils} from "../../util/OrmUtils";
-import {NestedSetMultipleRootError} from "../../error/NestedSetMultipleRootError";
-import {ObjectLiteral} from "../../common/ObjectLiteral";
-import {EntityMetadata} from "../../metadata/EntityMetadata";
+import {Subject} from "../Subject.ts";
+import {QueryRunner} from "../../query-runner/QueryRunner.ts";
+import {OrmUtils} from "../../util/OrmUtils.ts";
+import {NestedSetMultipleRootError} from "../../error/NestedSetMultipleRootError.ts";
+import {ObjectLiteral} from "../../common/ObjectLiteral.ts";
+import {EntityMetadata} from "../../metadata/EntityMetadata.ts";
 
 class NestedSetIds {
     left: number;

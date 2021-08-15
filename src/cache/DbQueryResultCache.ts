@@ -1,12 +1,12 @@
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {Connection} from "../connection/Connection";
-import {OracleDriver} from "../driver/oracle/OracleDriver";
-import {MssqlParameter} from "../driver/sqlserver/MssqlParameter";
-import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver";
-import {QueryRunner} from "../query-runner/QueryRunner";
-import {Table} from "../schema-builder/table/Table";
-import {QueryResultCache} from "./QueryResultCache";
-import {QueryResultCacheOptions} from "./QueryResultCacheOptions";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {Connection} from "../connection/Connection.ts";
+import {OracleDriver} from "../driver/oracle/OracleDriver.ts";
+import {MssqlParameter} from "../driver/sqlserver/MssqlParameter.ts";
+import {SqlServerDriver} from "../driver/sqlserver/SqlServerDriver.ts";
+import {QueryRunner} from "../query-runner/QueryRunner.ts";
+import {Table} from "../schema-builder/table/Table.ts";
+import {QueryResultCache} from "./QueryResultCache.ts";
+import {QueryResultCacheOptions} from "./QueryResultCacheOptions.ts";
 
 /**
  * Caches query result into current database, into separate table called "query-result-cache".

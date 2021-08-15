@@ -1,6 +1,6 @@
-import {ForeignKeyMetadata} from "../../metadata/ForeignKeyMetadata";
-import {TableForeignKeyOptions} from "../options/TableForeignKeyOptions";
-import { Driver } from "../../driver/Driver";
+import {ForeignKeyMetadata} from "../../metadata/ForeignKeyMetadata.ts";
+import {TableForeignKeyOptions} from "../options/TableForeignKeyOptions.ts";
+import { Driver } from "../../driver/Driver.ts";
 
 /**
  * Foreign key from the database stored in this class.

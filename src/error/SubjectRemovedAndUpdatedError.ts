@@ -1,5 +1,5 @@
-import {Subject} from "../persistence/Subject";
-import {TypeORMError} from "./TypeORMError";
+import {Subject} from "../persistence/Subject.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when same object is scheduled for remove and updation at the same time.

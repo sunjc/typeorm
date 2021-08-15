@@ -1,10 +1,10 @@
-import {EntityMetadata} from "../../metadata/EntityMetadata";
-import {QueryBuilderUtils} from "../QueryBuilderUtils";
-import {RelationMetadata} from "../../metadata/RelationMetadata";
-import {QueryExpressionMap} from "../QueryExpressionMap";
-import {SelectQueryBuilder} from "../SelectQueryBuilder";
-import {ObjectUtils} from "../../util/ObjectUtils";
-import { TypeORMError } from "../../error/TypeORMError";
+import {EntityMetadata} from "../../metadata/EntityMetadata.ts";
+import {QueryBuilderUtils} from "../QueryBuilderUtils.ts";
+import {RelationMetadata} from "../../metadata/RelationMetadata.ts";
+import {QueryExpressionMap} from "../QueryExpressionMap.ts";
+import {SelectQueryBuilder} from "../SelectQueryBuilder.ts";
+import {ObjectUtils} from "../../util/ObjectUtils.ts";
+import { TypeORMError } from "../../error/TypeORMError.ts";
 
 export class RelationCountAttribute {
 

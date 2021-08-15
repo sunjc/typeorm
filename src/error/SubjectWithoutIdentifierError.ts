@@ -1,5 +1,5 @@
-import {Subject} from "../persistence/Subject";
-import {TypeORMError} from "./TypeORMError";
+import {Subject} from "../persistence/Subject.ts";
+import {TypeORMError} from "./TypeORMError.ts";
 
 /**
  * Thrown when operation is going to be executed on a subject without identifier.

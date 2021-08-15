@@ -1,7 +1,7 @@
-import {Connection} from "../connection/Connection";
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {QueryRunner} from "../query-runner/QueryRunner";
-import {RelationMetadata} from "../metadata/RelationMetadata";
+import {Connection} from "../connection/Connection.ts";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {QueryRunner} from "../query-runner/QueryRunner.ts";
+import {RelationMetadata} from "../metadata/RelationMetadata.ts";
 
 /**
  * Wraps entities and creates getters/setters for their relations
