@@ -1,4 +1,4 @@
-import { TypeORMError } from "./TypeORMError";
+import { TypeORMError } from "./TypeORMError.ts";
 
 /**
  * Thrown when consumer tries to recreate connection with the same name, but previous connection was not closed yet.

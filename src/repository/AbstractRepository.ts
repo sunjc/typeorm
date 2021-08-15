@@ -1,13 +1,13 @@
-import {ObjectLiteral} from "../common/ObjectLiteral";
-import {EntityManager} from "../entity-manager/EntityManager";
-import {Repository} from "./Repository";
-import {TreeRepository} from "./TreeRepository";
-import {EntityTarget} from "../common/EntityTarget";
-import {ObjectType} from "../common/ObjectType";
-import {CustomRepositoryDoesNotHaveEntityError} from "../error/CustomRepositoryDoesNotHaveEntityError";
-import {getMetadataArgsStorage} from "../globals";
-import {CustomRepositoryNotFoundError} from "../error/CustomRepositoryNotFoundError";
-import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder";
+import {ObjectLiteral} from "../common/ObjectLiteral.ts";
+import {EntityManager} from "../entity-manager/EntityManager.ts";
+import {Repository} from "./Repository.ts";
+import {TreeRepository} from "./TreeRepository.ts";
+import {EntityTarget} from "../common/EntityTarget.ts";
+import {ObjectType} from "../common/ObjectType.ts";
+import {CustomRepositoryDoesNotHaveEntityError} from "../error/CustomRepositoryDoesNotHaveEntityError.ts";
+import {getMetadataArgsStorage} from "../globals.ts";
+import {CustomRepositoryNotFoundError} from "../error/CustomRepositoryNotFoundError.ts";
+import {SelectQueryBuilder} from "../query-builder/SelectQueryBuilder.ts";
 
 /**
  * Provides abstract class for custom repositories that do not inherit from original orm Repository.

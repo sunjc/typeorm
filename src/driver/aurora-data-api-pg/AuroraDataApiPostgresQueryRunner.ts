@@ -1,13 +1,13 @@
-import {QueryRunnerAlreadyReleasedError} from "../../error/QueryRunnerAlreadyReleasedError";
-import {TransactionAlreadyStartedError} from "../../error/TransactionAlreadyStartedError";
-import {TransactionNotStartedError} from "../../error/TransactionNotStartedError";
-import {QueryRunner} from "../../query-runner/QueryRunner";
-import {IsolationLevel} from "../types/IsolationLevel";
-import {AuroraDataApiPostgresDriver} from "./AuroraDataApiPostgresDriver";
-import {PostgresQueryRunner} from "../postgres/PostgresQueryRunner";
-import {ReplicationMode} from "../types/ReplicationMode";
-import {BroadcasterResult} from "../../subscriber/BroadcasterResult";
-import { QueryResult } from "../../query-runner/QueryResult";
+import {QueryRunnerAlreadyReleasedError} from "../../error/QueryRunnerAlreadyReleasedError.ts";
+import {TransactionAlreadyStartedError} from "../../error/TransactionAlreadyStartedError.ts";
+import {TransactionNotStartedError} from "../../error/TransactionNotStartedError.ts";
+import {QueryRunner} from "../../query-runner/QueryRunner.ts";
+import {IsolationLevel} from "../types/IsolationLevel.ts";
+import {AuroraDataApiPostgresDriver} from "./AuroraDataApiPostgresDriver.ts";
+import {PostgresQueryRunner} from "../postgres/PostgresQueryRunner.ts";
+import {ReplicationMode} from "../types/ReplicationMode.ts";
+import {BroadcasterResult} from "../../subscriber/BroadcasterResult.ts";
+import { QueryResult } from "../../query-runner/QueryResult.ts";
 
 class PostgresQueryRunnerWrapper extends PostgresQueryRunner {
     driver: any;
@@ -99,7 +99,7 @@ export class AuroraDataApiPostgresQueryRunner extends PostgresQueryRunnerWrapper
         if (beforeBroadcastResult.promises.length > 0) await Promise.all(beforeBroadcastResult.promises);
 
         this.isTransactionActive = true;
-      
+
         await this.client.startTransaction();
 
         const afterBroadcastResult = new BroadcasterResult();
@@ -114,7 +114,7 @@ export class AuroraDataApiPostgresQueryRunner extends PostgresQueryRunnerWrapper
     async commitTransaction(): Promise<void> {
         if (!this.isTransactionActive)
             throw new TransactionNotStartedError();
-      
+
         const beforeBroadcastResult = new BroadcasterResult();
         this.broadcaster.broadcastBeforeTransactionCommitEvent(beforeBroadcastResult);
         if (beforeBroadcastResult.promises.length > 0) await Promise.all(beforeBroadcastResult.promises);

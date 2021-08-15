@@ -1,13 +1,13 @@
-import {Driver} from "../Driver";
-import {PostgresDriver} from "../postgres/PostgresDriver";
-import {PlatformTools} from "../../platform/PlatformTools";
-import {Connection} from "../../connection/Connection";
-import {AuroraDataApiPostgresConnectionOptions} from "../aurora-data-api-pg/AuroraDataApiPostgresConnectionOptions";
-import {AuroraDataApiPostgresQueryRunner} from "../aurora-data-api-pg/AuroraDataApiPostgresQueryRunner";
-import {ReplicationMode} from "../types/ReplicationMode";
-import {ColumnMetadata} from "../../metadata/ColumnMetadata";
-import {ApplyValueTransformers} from "../../util/ApplyValueTransformers";
-import {DriverUtils} from "../DriverUtils";
+import {Driver} from "../Driver.ts";
+import {PostgresDriver} from "../postgres/PostgresDriver.ts";
+import {PlatformTools} from "../../platform/PlatformTools.ts";
+import {Connection} from "../../connection/Connection.ts";
+import {AuroraDataApiPostgresConnectionOptions} from "../aurora-data-api-pg/AuroraDataApiPostgresConnectionOptions.ts";
+import {AuroraDataApiPostgresQueryRunner} from "../aurora-data-api-pg/AuroraDataApiPostgresQueryRunner.ts";
+import {ReplicationMode} from "../types/ReplicationMode.ts";
+import {ColumnMetadata} from "../../metadata/ColumnMetadata.ts";
+import {ApplyValueTransformers} from "../../util/ApplyValueTransformers.ts";
+import {DriverUtils} from "../DriverUtils.ts";
 
 abstract class PostgresWrapper extends PostgresDriver {
     options: any;
