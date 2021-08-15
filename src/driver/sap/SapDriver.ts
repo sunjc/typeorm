@@ -7,7 +7,7 @@ import {
     TableColumn,
     TableForeignKey,
     TypeORMError,
-} from "../..";
+} from "../../index.ts";
 import {DriverPackageNotInstalledError} from "../../error/DriverPackageNotInstalledError.ts";
 import {ColumnMetadata} from "../../metadata/ColumnMetadata.ts";
 import {PlatformTools} from "../../platform/PlatformTools.ts";

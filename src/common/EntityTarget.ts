@@ -1,5 +1,5 @@
 import {ObjectType} from "./ObjectType.ts";
-import {EntitySchema} from "..";
+import {EntitySchema} from "../index.ts";
 
 /**
  * Entity target.

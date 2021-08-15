@@ -1,4 +1,4 @@
-import {Connection, SelectQueryBuilder} from "..";
+import {Connection, SelectQueryBuilder} from "../index.ts";
 import {EntitySchemaIndexOptions} from "./EntitySchemaIndexOptions.ts";
 import {EntitySchemaColumnOptions} from "./EntitySchemaColumnOptions.ts";
 import {EntitySchemaRelationOptions} from "./EntitySchemaRelationOptions.ts";

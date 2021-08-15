@@ -1,4 +1,4 @@
-import {QueryRunner, SelectQueryBuilder} from "..";
+import {QueryRunner, SelectQueryBuilder} from "../index.ts";
 import {ObjectLiteral} from "../common/ObjectLiteral.ts";
 import {Connection} from "../connection/Connection.ts";
 import {CannotCreateEntityIdMapError} from "../error/CannotCreateEntityIdMapError.ts";

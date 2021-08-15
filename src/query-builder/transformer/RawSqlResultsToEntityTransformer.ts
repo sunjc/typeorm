@@ -8,7 +8,7 @@ import {RelationMetadata} from "../../metadata/RelationMetadata.ts";
 import {OrmUtils} from "../../util/OrmUtils.ts";
 import {QueryExpressionMap} from "../QueryExpressionMap.ts";
 import {EntityMetadata} from "../../metadata/EntityMetadata.ts";
-import {QueryRunner} from "../..";
+import {QueryRunner} from "../../index.ts";
 import {DriverUtils} from "../../driver/DriverUtils.ts";
 
 /**

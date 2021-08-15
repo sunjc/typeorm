@@ -1,4 +1,4 @@
-import {Connection, Driver, EntityMetadata, SelectQueryBuilder} from "../..";
+import {Connection, Driver, EntityMetadata, SelectQueryBuilder} from "../../index.ts";
 import {ViewOptions} from "../options/ViewOptions.ts";
 
 /**

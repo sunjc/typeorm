@@ -1,4 +1,4 @@
-import {Connection, SelectQueryBuilder} from "..";
+import {Connection, SelectQueryBuilder} from "../index.ts";
 import {OrderByCondition} from "../find-options/OrderByCondition.ts";
 import {TableType} from "../metadata/types/TableTypes.ts";
 

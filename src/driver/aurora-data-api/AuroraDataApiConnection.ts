@@ -1,6 +1,6 @@
 import {AuroraDataApiQueryRunner} from "./AuroraDataApiQueryRunner.ts";
 import {Connection} from "../../connection/Connection.ts";
-import {ConnectionOptions, QueryRunner} from "../..";
+import {ConnectionOptions, QueryRunner} from "../../index.ts";
 import {ReplicationMode} from "../types/ReplicationMode.ts";
 
 /**
